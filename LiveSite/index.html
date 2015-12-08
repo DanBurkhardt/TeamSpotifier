@@ -11,12 +11,17 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?517718110" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?128938847" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
-    <!--HTML Widget code-->
+    <!--custom head HTML-->
+  <script src="scripts/jquery-2.1.4" type="text/javascript"></script>
+
+<script src="scripts/keyRead.js" type="text/javascript"></script>
+
+  <!--HTML Widget code-->
   
  
  </head>
@@ -27,46 +32,26 @@
  
   
   <div class="clearfix" id="page"><!-- column -->
-   <div class="position_content" id="page_position_content">
-    <div class="browser_width colelem" id="u83-bw">
-     <div id="u83"><!-- group -->
-      <div class="clearfix" id="u83_align_to_page">
-       <a class="anchor_item grpelem" id="home"></a>
-       <div class="clearfix grpelem" id="u82-5"><!-- content -->
-        <p>Home</p>
-        <p>&nbsp;</p>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="browser_width colelem" id="u112-bw">
-     <div id="u112"><!-- group -->
-      <div class="clearfix" id="u112_align_to_page">
-       <a class="anchor_item grpelem" id="two"></a>
-       <div class="grpelem" id="u75"><!-- custom html -->
-        
+   <a class="anchor_item colelem" id="home"></a>
+   <div class="clearfix colelem" id="u82-5"><!-- content -->
+    <p>Home</p>
+    <p>&nbsp;</p>
+   </div>
+   <a class="anchor_item colelem" id="two"></a>
+   <div class="colelem" id="u75"><!-- custom html -->
+    
  
 </div>
-       <div class="clearfix grpelem" id="u81-5"><!-- content -->
-        <p>One</p>
-        <p>&nbsp;</p>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="browser_width colelem" id="u113-bw">
-     <div id="u113"><!-- group -->
-      <div class="clearfix" id="u113_align_to_page">
-       <a class="anchor_item grpelem" id="two2"></a>
-       <div class="clearfix grpelem" id="u80-5"><!-- content -->
-        <p>Two</p>
-        <p>&nbsp;</p>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="verticalspacer"></div>
+   <div class="clearfix colelem" id="u81-5"><!-- content -->
+    <p>One</p>
+    <p>&nbsp;</p>
    </div>
+   <a class="anchor_item colelem" id="two2"></a>
+   <div class="clearfix colelem" id="u80-5"><!-- content -->
+    <p>Two</p>
+    <p>&nbsp;</p>
+   </div>
+   <div class="verticalspacer"></div>
   </div>
   <!-- JS includes -->
   <script type="text/javascript">
@@ -86,7 +71,6 @@ typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw E
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.detectScreenResolution();/* HiDPI screens */
 Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight()/* resize height */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */

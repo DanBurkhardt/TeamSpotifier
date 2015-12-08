@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #00001E;
-	background-color: #DBC05E;
+	color: #000007;
+	background-color: #AF735F;
 }
 
 .html
@@ -12,140 +12,81 @@
 #page
 {
 	z-index: 1;
-	width: 960px;
-	min-height: 2374px;
+	width: 704px;
+	min-height: 2101px;
 	background-image: none;
 	border-style: none;
 	border-color: #000000;
 	background-color: transparent;
+	padding-right: 256px;
+	padding-bottom: 273px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#page_position_content
-{
-	margin-top: -36px;
-	width: 0.01px;
-}
-
-#u83
-{
-	z-index: 16;
-	min-height: 176px;
-	background-color: #0D94FF;
-	padding-bottom: 520px;
 }
 
 #home
 {
 	position: relative;
-	width: 22px;
-	margin-right: -10000px;
-	margin-top: 36px;
-	left: 100px;
 }
 
 #u82-5
 {
-	z-index: 17;
+	z-index: 14;
 	width: 248px;
 	min-height: 120px;
 	background-color: transparent;
+	margin-left: 22px;
+	margin-top: 2px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 56px;
-	left: 122px;
 }
 
-#u83-bw
+#two
 {
-	z-index: 16;
-	min-height: 176px;
-}
-
-#u112
-{
-	z-index: 9;
-	min-height: 596px;
-	background-color: #2DFF05;
-	padding-bottom: 100px;
+	margin-left: 20px;
+	margin-top: 702px;
+	position: relative;
 }
 
 #u75
 {
-	z-index: 23;
+	z-index: 20;
 	width: 60px;
 	min-height: 64px;
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
+	margin-left: 52px;
+	margin-top: 20px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 38px;
-	left: 152px;
 }
 
 #u81-5
 {
-	z-index: 10;
+	z-index: 8;
 	width: 440px;
 	min-height: 176px;
 	background-color: transparent;
+	margin-left: 204px;
+	margin-top: 318px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 420px;
-	left: 304px;
 }
 
-#u112-bw
+#two2
 {
-	z-index: 9;
-	min-height: 596px;
-	margin-top: 182px;
-}
-
-#u113
-{
-	z-index: 2;
-	min-height: 381px;
-	background-color: #FF0B0A;
-	padding-bottom: 273px;
-}
-
-#u83_align_to_page,#u112_align_to_page,#u113_align_to_page
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
+	margin-left: 20px;
+	margin-top: 282px;
 	position: relative;
-	left: -100px;
-}
-
-#two,#two2
-{
-	position: relative;
-	width: 22px;
-	margin-right: -10000px;
-	left: 120px;
 }
 
 #u80-5
 {
-	z-index: 3;
+	z-index: 2;
 	width: 560px;
 	min-height: 168px;
 	background-color: transparent;
+	margin-left: 144px;
+	margin-top: 195px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 213px;
-	left: 244px;
-}
-
-#u113-bw
-{
-	z-index: 2;
-	min-height: 381px;
-	margin-top: 182px;
 }
 
 body
