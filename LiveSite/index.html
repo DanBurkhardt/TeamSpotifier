@@ -11,14 +11,14 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?399392900" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?384695435" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/f2UQv2mGW2baoOlA5CZQ-mxYaNgvVtc9qHxWqUzoHEJfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMehl-kDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/YOR2Vg4UfyLR_Mxfce4pv8ac0baAOFRphC8RRlj108IfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMY9q7hDgb.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -33,9 +33,6 @@
   <style>#slider { margin: 10px; }	</style>
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-
-
 
   <!--HTML Widget code-->
   
@@ -80,8 +77,24 @@
      <p>hello.</p>
     </div>
     <div class="colelem" id="u170"><!-- simple frame --></div>
-    <div class="clearfix colelem" id="u168-4"><!-- content -->
-     <p>we are team Spotifier and we are going to change the way that you listen to music</p>
+    <div class="clearfix colelem" id="pu237"><!-- group -->
+     <div class="grpelem" id="u237"><!-- custom html -->
+      <script>
+$(document).ready(function(){
+
+scenario1Listeners();
+
+$( "#dialog" ).dialog({ autoOpen: false });
+$( "#opener" ).click(function() {
+  $( "#dialog" ).dialog( "open" );
+});
+
+});
+</script>
+</div>
+     <div class="clearfix grpelem" id="u168-4"><!-- content -->
+      <p>we are team Spotifier and we are going to change the way that you listen to music</p>
+     </div>
     </div>
     <div class="clearfix colelem" id="u171-4"><!-- content -->
      <p>get started</p>
@@ -136,18 +149,28 @@ durationSlider1Changed(event,ui);
 
 </div>
      <div class="clearfix grpelem" id="u221-4"><!-- content -->
-      <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60hr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
+      <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
      </div>
     </div>
     <div class="clearfix colelem" id="ppu166"><!-- group -->
      <div class="clearfix grpelem" id="pu166"><!-- column -->
       <div class="colelem" id="u166"><!-- simple frame --></div>
-      <div class="Button rounded-corners clearfix colelem" id="buttonu212"><!-- container box -->
-       <div class="clip_frame grpelem" id="u206"><!-- image -->
-        <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
+      <div class="clearfix colelem" id="pbuttonu212"><!-- group -->
+       <div class="Button rounded-corners clearfix grpelem" id="buttonu212"><!-- container box -->
+        <div class="clip_frame grpelem" id="u206"><!-- image -->
+         <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
+        </div>
+        <div class="clearfix grpelem" id="u215-4"><!-- content -->
+         <p>add 15 mins of songs to existing playlist</p>
+        </div>
        </div>
-       <div class="clearfix grpelem" id="u215-4"><!-- content -->
-        <p>add 15 mins of songs to playlist</p>
+       <div class="Button rounded-corners clearfix grpelem" id="buttonu228"><!-- container box -->
+        <div class="clip_frame grpelem" id="u230"><!-- image -->
+         <img class="block" id="u230_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
+        </div>
+        <div class="clearfix grpelem" id="u229-4"><!-- content -->
+         <p>create a new playlist with these songs</p>
+        </div>
        </div>
       </div>
      </div>
