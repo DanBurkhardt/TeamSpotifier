@@ -11,23 +11,29 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?4153927571" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?12119554" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/pTJXKlChilF2-_gGU8TpBZ-eFGhiBS0uwLFPgg3_cr3feGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMe7EZhDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/o1PVyc0gRidToDTrZk4ydCrQ1sGx0D7goxno6n7UBywfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMYY3HcDgb.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
 </script>
     <!--custom head HTML-->
-  <script src="scripts/jquery-2.1.4" type="text/javascript"></script>
+  <script src="scripts/jquery-2.1.4.js" type="text/javascript"></script>
 
-<script src="scripts/keyRead.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <style>#slider { margin: 10px; }	</style>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
 
   <!--HTML Widget code-->
   
@@ -93,31 +99,46 @@
       <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="pu192"><!-- group -->
-     <div class="rounded-corners clearfix grpelem" id="u192"><!-- group -->
-      <div class="grpelem" id="u190"><!-- custom html -->
-       <input id="bobInput" placeholder="search the name of an artist" style="width:300px; height:25px"/>
+    <div class="clearfix colelem" id="ppu192"><!-- group -->
+     <div class="clearfix grpelem" id="pu192"><!-- column -->
+      <div class="rounded-corners clearfix colelem" id="u192"><!-- group -->
+       <div class="grpelem" id="u190"><!-- custom html -->
+        <input id="bobInput" placeholder="search the name of an artist" style="width:300px; height:25px"/>
 </div>
-      <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
-       <div class="clip_frame grpelem" id="u203"><!-- image -->
-        <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="27" height="27"/>
+       <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
+        <div class="clip_frame grpelem" id="u203"><!-- image -->
+         <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="27" height="27"/>
+        </div>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="u184-4"><!-- content -->
+       <p>search results</p>
+      </div>
+     </div>
+     <div class="grpelem" id="u216"><!-- custom html -->
+      <div id="slider"></div>
+
+<script>
+$( "#slider" ).slider();
+</script>
+
+</div>
+     <div class="clearfix grpelem" id="u220-4"><!-- content -->
+      <p>choose a duration for your playlist</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu166"><!-- group -->
+     <div class="clearfix grpelem" id="pu166"><!-- column -->
+      <div class="colelem" id="u166"><!-- simple frame --></div>
+      <div class="Button rounded-corners clearfix colelem" id="buttonu212"><!-- container box -->
+       <div class="clip_frame grpelem" id="u206"><!-- image -->
+        <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
+       </div>
+       <div class="clearfix grpelem" id="u215-4"><!-- content -->
+        <p>add all to playlist</p>
        </div>
       </div>
      </div>
-     <div class="Button rounded-corners clearfix grpelem" id="buttonu212"><!-- container box -->
-      <div class="clip_frame grpelem" id="u206"><!-- image -->
-       <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="37" height="37"/>
-      </div>
-      <div class="clearfix grpelem" id="u215-4"><!-- content -->
-       <p>add all to playlist</p>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="u184-4"><!-- content -->
-     <p>results</p>
-    </div>
-    <div class="clearfix colelem" id="pu166"><!-- group -->
-     <div class="grpelem" id="u166"><!-- simple frame --></div>
      <div class="grpelem" id="u185"><!-- custom html -->
       <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
 </div>
@@ -174,6 +195,9 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
   
 <script type="text/javascript">
 
+         $(function() {
+            $( "#slider-1" ).slider();
+         });
 </script>
 
 <script type="text/javascript">

@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #0000F7;
-	background-color: #97E793;
+	color: #000000;
+	background-color: #B8EE02;
 }
 
 .html
@@ -13,7 +13,7 @@
 {
 	z-index: 1;
 	width: 960px;
-	min-height: 3237.95px;
+	min-height: 437.9499999999998px;
 	background-image: none;
 	border-style: none;
 	border-color: #000000;
@@ -25,7 +25,6 @@
 
 #page_position_content
 {
-	padding-bottom: 62px;
 	width: 0.01px;
 }
 
@@ -67,8 +66,8 @@
 	min-height: 25px;
 	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 37px;
 	font-size: 31px;
+	line-height: 37px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	position: fixed;
@@ -83,9 +82,9 @@
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
+	line-height: 23px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	position: fixed;
@@ -96,18 +95,18 @@
 #u159-4
 {
 	z-index: 68;
-	width: 109px;
+	width: 117px;
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
+	line-height: 23px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	position: fixed;
 	top: 28px;
-	left: 638px;
+	left: 634px;
 }
 
 #u160-4
@@ -117,9 +116,9 @@
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
+	line-height: 23px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	position: fixed;
@@ -134,9 +133,9 @@
 	min-height: 27px;
 	background-color: transparent;
 	color: #FFFFFF;
-	line-height: 12px;
 	text-align: left;
 	font-size: 10px;
+	line-height: 12px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	position: fixed;
@@ -179,7 +178,7 @@
 
 #u114
 {
-	z-index: 80;
+	z-index: 85;
 	width: 50px;
 	min-height: 25px;
 	border-style: none;
@@ -192,7 +191,7 @@
 
 #u75
 {
-	z-index: 79;
+	z-index: 84;
 	width: 60px;
 	min-height: 64px;
 	border-style: none;
@@ -209,9 +208,9 @@
 	width: 248px;
 	min-height: 41px;
 	background-color: transparent;
-	line-height: 48px;
 	text-align: center;
 	font-size: 40px;
+	line-height: 48px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	margin-left: 356px;
@@ -237,9 +236,9 @@
 	width: 351px;
 	min-height: 63px;
 	background-color: transparent;
-	line-height: 24px;
 	text-align: center;
 	font-size: 20px;
+	line-height: 24px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	margin-left: 305px;
@@ -253,9 +252,9 @@
 	width: 226px;
 	min-height: 40px;
 	background-color: transparent;
-	line-height: 24px;
 	text-align: center;
 	font-size: 20px;
+	line-height: 24px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
 	margin-left: 367px;
@@ -275,7 +274,7 @@
 #one
 {
 	margin-left: 20px;
-	margin-top: 79px;
+	margin-top: 99px;
 	position: relative;
 }
 
@@ -285,12 +284,12 @@
 	width: 440px;
 	min-height: 32px;
 	background-color: transparent;
-	line-height: 36px;
 	font-size: 30px;
+	line-height: 36px;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	margin-left: 42px;
-	margin-top: 109px;
+	margin-top: 96px;
 	position: relative;
 }
 
@@ -330,11 +329,19 @@
 	left: 142px;
 }
 
+#ppu192
+{
+	width: 0.01px;
+	margin-left: 87px;
+	margin-top: 31px;
+}
+
 #pu192
 {
 	width: 0.01px;
-	margin-left: 114px;
-	margin-top: 31px;
+	margin-right: -10000px;
+	margin-top: 7px;
+	margin-left: -1px;
 }
 
 #u192
@@ -346,11 +353,7 @@
 	border-color: #000000;
 	background-color: transparent;
 	border-radius: 100px;
-	margin-bottom: -1px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 17px;
-	left: -1px;
 }
 
 #u190
@@ -383,7 +386,6 @@
 
 #buttonu199:hover
 {
-	background-color: #545454;
 	width: 37px;
 	min-height: 0px;
 	margin: 1px -10000px 0px 0px;
@@ -391,7 +393,6 @@
 
 #buttonu199.ButtonSelected
 {
-	background-color: #FFFFFF;
 	width: 37px;
 	min-height: 0px;
 	margin: 1px -10000px 0px 0px;
@@ -422,108 +423,62 @@
 	margin: 2px -10000px 0px 0px;
 }
 
-#buttonu212
-{
-	z-index: 31;
-	width: 231px;
-	border-color: #787878;
-	background-color: #CACACA;
-	border-radius: 10px;
-	padding-bottom: 6px;
-	position: relative;
-	margin-right: -10000px;
-	left: 503px;
-}
-
-#buttonu212:hover
-{
-	background-color: #545454;
-	width: 231px;
-	min-height: 0px;
-	margin: 0px -10000px 0px 0px;
-}
-
-#buttonu212.ButtonSelected
-{
-	background-color: #CACACA;
-	width: 231px;
-	min-height: 0px;
-	margin: 0px -10000px 0px 0px;
-}
-
-#u206
-{
-	z-index: 32;
-	width: 37px;
-	background-color: transparent;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 7px;
-	left: 24px;
-}
-
-#buttonu212:hover #u206
-{
-	width: 37px;
-	min-height: 0px;
-	margin: 7px -10000px 0px 0px;
-}
-
-#buttonu212.ButtonSelected #u206
-{
-	width: 37px;
-	min-height: 0px;
-	margin: 7px -10000px 0px 0px;
-}
-
-#u215-4
-{
-	z-index: 34;
-	width: 123px;
-	min-height: 28px;
-	background-color: transparent;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 16px;
-	left: 75px;
-}
-
-#buttonu212:hover #u215-4
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 28px;
-	width: 123px;
-	margin: 16px -10000px 0px 0px;
-}
-
-#buttonu212.ButtonSelected #u215-4
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-height: 28px;
-	width: 123px;
-	margin: 16px -10000px 0px 0px;
-}
-
 #u184-4
 {
 	z-index: 22;
 	width: 105px;
 	min-height: 22px;
 	background-color: transparent;
-	text-align: center;
+	text-align: left;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 300;
-	margin-left: 244px;
-	margin-top: 19px;
+	margin-left: 1px;
+	margin-top: 38px;
 	position: relative;
+}
+
+#u216
+{
+	z-index: 79;
+	width: 367px;
+	min-height: 69px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	left: 437px;
+}
+
+#u220-4
+{
+	z-index: 80;
+	width: 351px;
+	min-height: 20px;
+	background-color: transparent;
+	text-align: left;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 34px;
+	left: 437px;
+}
+
+#ppu166
+{
+	width: 0.01px;
+	margin-left: 87px;
+	margin-top: 5px;
 }
 
 #pu166
 {
 	width: 0.01px;
-	margin-left: 71px;
+	padding-bottom: 0px;
+	margin-right: -10000px;
+	margin-top: -1px;
+	margin-left: -1px;
 }
 
 #u166
@@ -536,14 +491,97 @@
 	border-color: #000000;
 	background-color: transparent;
 	position: relative;
+}
+
+#buttonu212
+{
+	z-index: 31;
+	width: 135px;
+	border-color: #787878;
+	background-color: #CACACA;
+	border-radius: 10px;
+	padding-bottom: 3px;
+	margin-left: 159px;
+	margin-top: 12px;
+	position: relative;
+}
+
+#buttonu212:hover
+{
+	background-color: #545454;
+	width: 135px;
+	min-height: 0px;
+	margin: 12px 0px 0px 159px;
+}
+
+#buttonu212.ButtonSelected
+{
+	background-color: #CACACA;
+	width: 135px;
+	min-height: 0px;
+	margin: 12px 0px 0px 159px;
+}
+
+#u206
+{
+	z-index: 36;
+	width: 19px;
+	background-color: transparent;
+	position: relative;
 	margin-right: -10000px;
-	margin-top: 4px;
-	left: -1px;
+	margin-top: 8px;
+	left: 7px;
+}
+
+#buttonu212:hover #u206
+{
+	width: 19px;
+	min-height: 0px;
+	margin: 8px -10000px 0px 0px;
+}
+
+#buttonu212.ButtonSelected #u206
+{
+	width: 19px;
+	min-height: 0px;
+	margin: 8px -10000px 0px 0px;
+}
+
+#u215-4
+{
+	z-index: 32;
+	width: 98px;
+	min-height: 6px;
+	background-color: transparent;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 500;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 8px;
+	left: 31px;
+}
+
+#buttonu212:hover #u215-4
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 6px;
+	width: 98px;
+	margin: 8px -10000px 0px 0px;
+}
+
+#buttonu212.ButtonSelected #u215-4
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 6px;
+	width: 98px;
+	margin: 8px -10000px 0px 0px;
 }
 
 #u185
 {
-	z-index: 81;
+	z-index: 86;
 	width: 250px;
 	min-height: 336px;
 	border-style: none;
@@ -551,13 +589,13 @@
 	background-color: transparent;
 	position: relative;
 	margin-right: -10000px;
-	left: 509px;
+	left: 541px;
 }
 
 #two
 {
 	margin-left: 30px;
-	margin-top: 415px;
+	margin-top: 433px;
 	position: relative;
 }
 
