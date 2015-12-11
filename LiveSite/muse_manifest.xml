@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="TeamSpotifier.com" resolutions="1x,2x" timestamp="1449875744498">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1449876680680">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -14,7 +14,7 @@
     <file name="u241_2x.png" crc="3887323488" ref="index"/>
   </folder>
   <folder name="css">
-    <file name="site_global.css" crc="4052507572"/>
+    <file name="site_global.css" crc="453856629"/>
     <file name="index.css" crc="4212012179" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -24,5 +24,5 @@
     <file name="jquery.scrolleffects.js" crc="206645848" ref="index"/>
     <file name="pie.js" crc="3827607177" ref="index"/>
   </folder>
-  <file name="index.html" crc="290959110" seo="true" mt="1449875711039" redirect="true"/>
+  <file name="index.html" crc="233772457" seo="true" mt="1449876675226" redirect="true"/>
 </manifest>
