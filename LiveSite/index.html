@@ -11,14 +11,14 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?384695435" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?4212012179" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/YOR2Vg4UfyLR_Mxfce4pv8ac0baAOFRphC8RRlj108IfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMY9q7hDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/x50imkkZoJwl1pe-kxFrbCgdWSkQDCzU3jTLDo_4aj6feGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMe6C7hDgb.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -28,12 +28,15 @@
   <script src="scripts/jquery-2.1.4.js" type="text/javascript"></script>
 
 <script src="scripts/CustomUIObjects.js" type="text/javascript"></script>
-<script src="scripts/bySongs.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <style>#slider { margin: 10px; }	</style>
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script src="scripts/byRange.js" type="text/javascript"></script>
+<script src="scripts/byArtist.js" type="text/javascript"></script>
+<script src="scripts/bySong.js" type="text/javascript"></script>
 
   <!--HTML Widget code-->
   
@@ -112,30 +115,19 @@ $( "#opener" ).click(function() {
       <img class="block" id="u178_img" src="images/avaone.jpg" data-hidpi-src="images/avaone_2x.jpg" alt="" width="120" height="120"/>
      </div>
      <div class="clearfix grpelem" id="u167-4"><!-- content -->
-      <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
+      <p>Bob is a 21 year old college student who is a part of many student clubs on campus. As a leader, he has to organize multiple events for different focus groups. He often spends hours before an event manually creating playlists that might suit the mood of the activity. Although he knows a lot about music, he wishes he could spend less time on creating playlists and more time on organizing the events.</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="u220-4"><!-- content -->
-     <p>adjust the duration of your playlist</p>
-    </div>
-    <div class="clearfix colelem" id="ppu192"><!-- group -->
-     <div class="clearfix grpelem" id="pu192"><!-- column -->
-      <div class="rounded-corners clearfix colelem" id="u192"><!-- group -->
-       <div class="grpelem" id="u190"><!-- custom html -->
-        <input id="bobInput" placeholder="search the name of an artist" style="width:300px; height:25px"/>
+    <div class="clearfix colelem" id="pppu192"><!-- group -->
+     <div class="clearfix grpelem" id="ppu192"><!-- column -->
+      <div class="clearfix colelem" id="pu192"><!-- group -->
+       <div class="rounded-corners clearfix grpelem" id="u192"><!-- group -->
+        <div class="clearfix grpelem" id="pu190"><!-- column -->
+         <div class="colelem" id="u190"><!-- custom html -->
+          <input id="bobInput" placeholder="enter the name of an artist here.." style="width:300px; height:25px"/>
 </div>
-       <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
-        <div class="clip_frame grpelem" id="u203"><!-- image -->
-         <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="27" height="27"/>
-        </div>
-       </div>
-      </div>
-      <div class="clearfix colelem" id="u184-4"><!-- content -->
-       <p>search results</p>
-      </div>
-     </div>
-     <div class="grpelem" id="u216"><!-- custom html -->
-      <div id="durationSlider1"></div>
+         <div class="colelem" id="u216"><!-- custom html -->
+          <div id="durationSlider1"></div>
 
 <script>
 $( "#durationSlider1" ).slider({
@@ -149,12 +141,27 @@ durationSlider1Changed(event,ui);
 </script>
 
 </div>
-     <div class="clearfix grpelem" id="u221-4"><!-- content -->
-      <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="ppu166"><!-- group -->
-     <div class="clearfix grpelem" id="pu166"><!-- column -->
+        </div>
+        <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
+         <div class="clearfix grpelem" id="u243-4"><!-- content -->
+          <p>Search</p>
+         </div>
+         <div class="clip_frame grpelem" id="u203"><!-- image -->
+          <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="18" height="20"/>
+         </div>
+        </div>
+       </div>
+       <div class="grpelem" id="u241"><!-- rasterized frame --></div>
+       <div class="clearfix grpelem" id="u220-4"><!-- content -->
+        <p>adjust the duration of your playlist</p>
+       </div>
+       <div class="clearfix grpelem" id="u221-4"><!-- content -->
+        <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="u184-4"><!-- content -->
+       <p>search results</p>
+      </div>
       <div class="colelem" id="u166"><!-- simple frame --></div>
       <div class="clearfix colelem" id="pbuttonu212"><!-- group -->
        <div class="Button rounded-corners clearfix grpelem" id="buttonu212"><!-- container box -->
@@ -180,13 +187,41 @@ durationSlider1Changed(event,ui);
 </div>
     </div>
     <a class="anchor_item colelem" id="two"></a>
-    <div class="clearfix colelem" id="u80-5"><!-- content -->
-     <p>Two</p>
-     <p>&nbsp;</p>
+    <div class="clearfix colelem" id="u244-4"><!-- content -->
+     <p>bob likes music with different themes</p>
+    </div>
+    <div class="clearfix colelem" id="pu245"><!-- group -->
+     <div class="rounded-corners clip_frame grpelem" id="u245"><!-- image -->
+      <img class="block" id="u245_img" src="images/avaone.jpg" data-hidpi-src="images/avaone_2x.jpg" alt="" width="120" height="120"/>
+     </div>
+     <div class="clearfix grpelem" id="u248-5"><!-- content -->
+      <p>Bob selects themes about the event from an in-built checkbox. This checkbox includes tags such as “dance”, “formal”, “chill” and “high-energy” to help Bob determine the nature of the event and the people attending it. He doesn’t want his music taste to influence the music played at the event, so he selects broad tags. He also specifies the duration of the event (for example, he wants to play music for 2 hours). Once he’s done making his selection, he gets a list of relevant music that satisfy his requirements and is close to the given duration. This is generated in the form of a playlist. He can add and remove songs at any time. When he removes a song, he gets a suggestion for another similar song that matches his tags. He can choose to add this to his playlist if he wishes.</p>
+      <p>&nbsp;</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu250"><!-- group -->
+     <div class="grpelem" id="u250"><!-- simple frame --></div>
+     <div class="grpelem" id="u256"><!-- custom html -->
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
     </div>
     <a class="anchor_item colelem" id="three"></a>
-    <div class="clearfix colelem" id="u165-4"><!-- content -->
-     <p>Three</p>
+    <div class="clearfix colelem" id="u255-4"><!-- content -->
+     <p>meet bob</p>
+    </div>
+    <div class="clearfix colelem" id="pu251"><!-- group -->
+     <div class="rounded-corners clip_frame grpelem" id="u251"><!-- image -->
+      <img class="block" id="u251_img" src="images/avaone.jpg" data-hidpi-src="images/avaone_2x.jpg" alt="" width="120" height="120"/>
+     </div>
+     <div class="clearfix grpelem" id="u254-4"><!-- content -->
+      <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu267"><!-- group -->
+     <div class="grpelem" id="u267"><!-- simple frame --></div>
+     <div class="grpelem" id="u258"><!-- custom html -->
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
     </div>
     <div class="verticalspacer"></div>
    </div>
@@ -206,8 +241,7 @@ durationSlider1Changed(event,ui);
    $(document).ready(function() { try {
 (function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
 for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
-typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
-/* body */
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.detectScreenResolution();/* HiDPI screens */
 Muse.Utils.prepHyperlinks(true);/* body */

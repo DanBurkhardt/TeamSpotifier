@@ -2,6 +2,8 @@
 // Dan Burkhardt
 // Team Spotifier
 
+var currentDuration1 = "15";
+
 /*
 /       JQUERY Slider Actions 
 */
@@ -13,6 +15,11 @@ function durationSlider1Changed(event, ui){
     
     // Replace the button text with the updated duration
     $('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>'); 
+    
+    currentDuration1 = ui.value;
+    
+    
+    
 };
 
 
