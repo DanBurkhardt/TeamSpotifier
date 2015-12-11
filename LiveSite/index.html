@@ -11,14 +11,14 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?12119554" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?399392900" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/o1PVyc0gRidToDTrZk4ydCrQ1sGx0D7goxno6n7UBywfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMYY3HcDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/f2UQv2mGW2baoOlA5CZQ-mxYaNgvVtc9qHxWqUzoHEJfeGCgf5rzVsJGwQM3FQ9uwmvuFRMkFRFK526352ZqjRmqZRSDjQbXjD6tFRwuZcJowyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMehl-kDgb.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -26,6 +26,8 @@
 </script>
     <!--custom head HTML-->
   <script src="scripts/jquery-2.1.4.js" type="text/javascript"></script>
+
+<script src="scripts/CustomUIObjects.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <style>#slider { margin: 10px; }	</style>
@@ -99,6 +101,9 @@
       <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
      </div>
     </div>
+    <div class="clearfix colelem" id="u220-4"><!-- content -->
+     <p>adjust the duration of your playlist</p>
+    </div>
     <div class="clearfix colelem" id="ppu192"><!-- group -->
      <div class="clearfix grpelem" id="pu192"><!-- column -->
       <div class="rounded-corners clearfix colelem" id="u192"><!-- group -->
@@ -116,15 +121,22 @@
       </div>
      </div>
      <div class="grpelem" id="u216"><!-- custom html -->
-      <div id="slider"></div>
+      <div id="durationSlider1"></div>
 
 <script>
-$( "#slider" ).slider();
+$( "#durationSlider1" ).slider({
+step:15,
+value:15,
+min: 15,
+change: function(event, ui){
+durationSlider1Changed(event,ui);
+}
+});
 </script>
 
 </div>
-     <div class="clearfix grpelem" id="u220-4"><!-- content -->
-      <p>choose a duration for your playlist</p>
+     <div class="clearfix grpelem" id="u221-4"><!-- content -->
+      <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60hr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
      </div>
     </div>
     <div class="clearfix colelem" id="ppu166"><!-- group -->
@@ -135,7 +147,7 @@ $( "#slider" ).slider();
         <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
        </div>
        <div class="clearfix grpelem" id="u215-4"><!-- content -->
-        <p>add all to playlist</p>
+        <p>add 15 mins of songs to playlist</p>
        </div>
       </div>
      </div>
@@ -195,9 +207,6 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
   
 <script type="text/javascript">
 
-         $(function() {
-            $( "#slider-1" ).slider();
-         });
 </script>
 
 <script type="text/javascript">
