@@ -1,0 +1,13 @@
+/**********************************
+// Custom CSS to override defaults
+**********************************/
+
+
+/*Prevent the text selection cursor
+/ I.E.: treat text on buttons like
+/ button instead of text
+*/
+body {
+    cursor:default;
+}
+

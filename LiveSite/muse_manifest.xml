@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1449881570279">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1449944381483">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -8,14 +8,24 @@
     <file name="avaone_2x.jpg" crc="279327328" seo="true" ref="index"/>
     <file name="search.png" crc="186269174" seo="true" ref="index"/>
     <file name="search_2x.png" crc="3877201586" seo="true" ref="index"/>
-    <file name="add.png" crc="3877761371" seo="true" ref="index"/>
-    <file name="add_2x.png" crc="4151978739" seo="true" ref="index"/>
+    <file name="add.png" crc="4087481514" seo="true" ref="index"/>
+    <file name="add_2x.png" crc="469823035" seo="true" ref="index"/>
     <file name="u241.png" crc="319123124" ref="index"/>
     <file name="u241_2x.png" crc="3887323488" ref="index"/>
+    <file name="add19x19.png" crc="108580725" seo="true" ref="index"/>
+    <file name="add19x19_2x.png" crc="264812295" seo="true" ref="index"/>
+    <file name="u352.png" crc="4183019336" ref="index"/>
+    <file name="u352_2x.png" crc="58712043" ref="index"/>
+    <file name="u363.png" crc="319123124" ref="index"/>
+    <file name="u363_2x.png" crc="3887323488" ref="index"/>
+    <file name="playlists.png" crc="205681089" seo="true" ref="index"/>
+    <file name="playlists_2x.png" crc="65176156" seo="true" ref="index"/>
+    <file name="managelist.png" crc="364658062" seo="true" ref="index"/>
+    <file name="managelist_2x.png" crc="3773494723" seo="true" ref="index"/>
   </folder>
   <folder name="css">
-    <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="466334504" ref="index"/>
+    <file name="site_global.css" crc="4144991806"/>
+    <file name="index.css" crc="4065716506" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -23,6 +33,10 @@
     <file name="jquery.watch.js" crc="3999102769" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="206645848" ref="index"/>
     <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="3883484123" ref="index"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index"/>
   </folder>
-  <file name="index.html" crc="4272879579" seo="true" mt="1449881566717" redirect="true"/>
+  <file name="index.html" crc="299920380" seo="true" mt="1449944367327" redirect="true"/>
 </manifest>

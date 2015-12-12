@@ -2,67 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.TeamSpotifier.com/images/appicon.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/appicon_2x.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/downarrow.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/downarrow_2x.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/avaone.jpg</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/avaone_2x.jpg</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/search.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/search_2x.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/add.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/images/add_2x.png</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/add19x19.png</loc>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/add19x19_2x.png</loc>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/playlists.png</loc>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/playlists_2x.png</loc>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/managelist.png</loc>
+    <lastmod>2015-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.TeamSpotifier.com/images/managelist_2x.png</loc>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.TeamSpotifier.com/index.html</loc>
-    <lastmod>2015-12-11</lastmod>
+    <lastmod>2015-12-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

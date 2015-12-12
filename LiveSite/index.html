@@ -3,22 +3,26 @@
  <head>
 
   <script type="text/javascript">
-   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.scrolleffects.js", "jquery.watch.js", "index.css"], "outOfDate":[]};
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.scrolleffects.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "index.css"], "outOfDate":[]};
 </script>
   
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2015.0.2.310"/>
   <title>Home</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?466334504" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?4144991806"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?4065716506" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/pD2cywn7B2wEngNRO2enK4frVu3DiIZRiW_7Yh92LgSfeGCgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMYKaEhDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/asap:n7,n4:default.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/m0bgGGgprOsHyWOiAjsxzpdvEIT3rZ8BRHLVcUKPagtfeGMgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MqGIQWmDZZMgzS7UC39.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -35,6 +39,8 @@
 <script src="scripts/byRange.js" type="text/javascript"></script>
 <script src="scripts/byArtist.js" type="text/javascript"></script>
 <script src="scripts/bySongs.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/customconfig.css">
 
 <script src="https://use.typekit.net/ugx3enr.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -82,15 +88,7 @@
     </div>
     <div class="colelem" id="u170"><!-- simple frame --></div>
     <div class="clearfix colelem" id="pu237"><!-- group -->
-     <div class="grpelem" id="u237"><!-- custom html -->
-      <script>
-$(document).ready(function(){
-
-scenario1Listeners();
-
-});
-</script>
-</div>
+     <div class="grpelem" id="u237"><!-- custom html --></div>
      <div class="clearfix grpelem" id="u168-4"><!-- content -->
       <p>we are team Spotifier and we are going to change the way that you listen to music</p>
      </div>
@@ -105,6 +103,58 @@ scenario1Listeners();
     <div class="clearfix colelem" id="u81-4"><!-- content -->
      <p>meet bob</p>
     </div>
+    <div class="PamphletWidget clearfix widget_invisible mse_pre_init" id="pamphletu389"><!-- none box -->
+     <div class="ThumbGroup clearfix grpelem" id="u390"><!-- none box -->
+      <div class="popup_anchor">
+       <div class="Thumb popup_element" id="u393"><!-- simple frame --></div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u396popup">
+      <div class="ContainerGroup rgba-background clearfix" id="u396"><!-- stack box -->
+       <div class="Container clearfix grpelem" id="u397"><!-- column -->
+        <div class="clearfix colelem" id="pu407-4"><!-- group -->
+         <div class="clearfix grpelem" id="u407-4"><!-- content -->
+          <p>manage playlists</p>
+         </div>
+         <div class="clip_frame grpelem" id="u413"><!-- image -->
+          <img class="block" id="u413_img" src="images/managelist.png" data-hidpi-src="images/managelist_2x.png" alt="" width="43" height="43"/>
+         </div>
+         <div class="clearfix grpelem" id="u419-4"><!-- content -->
+          <p>select a playlist and remove items or simply delete the whole playlist</p>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="ppu410-4"><!-- group -->
+         <div class="clearfix grpelem" id="pu410-4"><!-- column -->
+          <div class="clearfix colelem" id="u410-4"><!-- content -->
+           <p>select playlist</p>
+          </div>
+          <div class="colelem" id="u408"><!-- custom html -->
+           <select name="playlistSelector" style="width:150px; height:50px" id="scenario1PlaylistSelector">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+         </div>
+         <div class="grpelem" id="u411"><!-- custom html -->
+          <div id="managePlaylistDiv" class="grpelem" style="height:300px; width:450px; border-width:2px; border-style:solid; overflow:scroll;">test</div>
+</div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor">
+      <div class="PamphletCloseButton PamphletLightboxPart popup_element rounded-corners clearfix" id="u405"><!-- group -->
+       <div class="clearfix grpelem" id="u406-4"><!-- content -->
+        <p>done</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clip_frame ose_pre_init mse_pre_init" id="u380"><!-- image -->
+     <img class="block" id="u380_img" src="images/playlists.png" data-hidpi-src="images/playlists_2x.png" alt="" width="59" height="59"/>
+    </div>
     <div class="clearfix colelem" id="pu178"><!-- group -->
      <div class="rounded-corners clip_frame grpelem" id="u178"><!-- image -->
       <img class="block" id="u178_img" src="images/avaone.jpg" data-hidpi-src="images/avaone_2x.jpg" alt="" width="120" height="120"/>
@@ -113,16 +163,31 @@ scenario1Listeners();
       <p>Bob is a 21 year old college student who is a part of many student clubs on campus. As a leader, he has to organize multiple events for different focus groups. He often spends hours before an event manually creating playlists that might suit the mood of the activity. Although he knows a lot about music, he wishes he could spend less time on creating playlists and more time on organizing the events.</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="pppu192"><!-- group -->
-     <div class="clearfix grpelem" id="ppu192"><!-- column -->
-      <div class="clearfix colelem" id="pu192"><!-- group -->
+    <div class="clearfix ose_pre_init mse_pre_init" id="u379-4"><!-- content -->
+     <p>manage playlists</p>
+    </div>
+    <div class="clearfix colelem" id="pppu184-4"><!-- group -->
+     <div class="clearfix grpelem" id="ppu184-4"><!-- column -->
+      <div class="clearfix colelem" id="pu184-4"><!-- group -->
+       <div class="clearfix grpelem" id="u184-4"><!-- content -->
+        <p>search results</p>
+       </div>
        <div class="rounded-corners clearfix grpelem" id="u192"><!-- group -->
-        <div class="clearfix grpelem" id="pu190"><!-- column -->
-         <div class="colelem" id="u190"><!-- custom html -->
-          <input id="bobInput" placeholder="enter the name of an artist here.." style="width:300px; height:25px"/>
+        <div class="grpelem" id="u190"><!-- custom html -->
+         <input id="bobInput" placeholder="enter the name of an artist here.." style="width:300px; height:25px"/>
 </div>
-         <div class="colelem" id="u216"><!-- custom html -->
-          <div id="durationSlider1"></div>
+        <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
+         <div class="clearfix grpelem" id="u243-4"><!-- content -->
+          <p>Search</p>
+         </div>
+         <div class="clip_frame grpelem" id="u203"><!-- image -->
+          <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="18" height="20"/>
+         </div>
+        </div>
+       </div>
+       <div class="grpelem" id="u241"><!-- rasterized frame --></div>
+       <div class="grpelem" id="u216"><!-- custom html -->
+        <div id="durationSlider1"></div>
 
 <script>
 $( "#durationSlider1" ).slider({
@@ -136,63 +201,125 @@ durationSlider1Changed(event,ui);
 </script>
 
 </div>
-        </div>
-        <div class="Button rounded-corners clearfix grpelem" id="buttonu199"><!-- container box -->
-         <div class="clearfix grpelem" id="u243-4"><!-- content -->
-          <p>Search</p>
-         </div>
-         <div class="clip_frame grpelem" id="u203"><!-- image -->
-          <img class="block" id="u203_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="18" height="20"/>
-         </div>
-        </div>
-       </div>
-       <div class="grpelem" id="u241"><!-- rasterized frame --></div>
        <div class="clearfix grpelem" id="u220-4"><!-- content -->
         <p>adjust the duration of your playlist</p>
        </div>
        <div class="clearfix grpelem" id="u221-4"><!-- content -->
-        <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
+        <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
        </div>
       </div>
-      <div class="clearfix colelem" id="u184-4"><!-- content -->
-       <p>search results</p>
-      </div>
-      <div class="colelem" id="u166"><!-- simple frame --></div>
+      <div class="colelem" id="u353"><!-- custom html -->
+       <div id="u166" class="grpelem" style="height:200px; width:500px; border-width:2px; border-style:solid; overflow:scroll;">test</div>
+</div>
       <div class="clearfix colelem" id="pbuttonu212"><!-- group -->
        <div class="Button rounded-corners clearfix grpelem" id="buttonu212"><!-- container box -->
-        <div class="clip_frame grpelem" id="u206"><!-- image -->
-         <img class="block" id="u206_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
-        </div>
-        <div class="clearfix grpelem" id="u215-4"><!-- content -->
-         <p>add 15 mins of songs to existing playlist</p>
+        <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu291"><!-- none box -->
+         <div class="ThumbGroup clearfix grpelem" id="u292"><!-- none box -->
+          <div class="popup_anchor">
+           <div class="Thumb popup_element clearfix" id="u294"><!-- group -->
+            <div class="clip_frame grpelem" id="u206"><!-- image -->
+             <img class="block" id="u206_img" src="images/add19x19.png" data-hidpi-src="images/add19x19_2x.png" alt="" width="19" height="19"/>
+            </div>
+            <div class="clearfix grpelem" id="u215-4"><!-- content -->
+             <p>add 15 mins of songs to existing playlist</p>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="popup_anchor" id="u298popup">
+          <div class="ContainerGroup rgba-background clearfix" id="u298"><!-- stack box -->
+           <div class="Container clearfix grpelem" id="u303"><!-- column -->
+            <div class="clearfix colelem" id="pu328-4"><!-- group -->
+             <div class="clearfix grpelem" id="u328-4"><!-- content -->
+              <p>add to existing playlist</p>
+             </div>
+             <div class="clip_frame grpelem" id="u325"><!-- image -->
+              <img class="block" id="u325_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="20" height="20"/>
+             </div>
+            </div>
+            <div class="clearfix colelem" id="u324-4"><!-- content -->
+             <p>you selected 15 mins of songs.</p>
+            </div>
+            <div class="clearfix colelem" id="u321-6"><!-- content -->
+             <p>Choose a playlist and click save</p>
+             <p>to add these songs.</p>
+            </div>
+            <div class="colelem" id="u322"><!-- custom html -->
+             <select name="playlistSelector" style="width:200px; height=50px" id="scenario1PlaylistSelector">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+            <div class="colelem" id="u319"><!-- custom html -->
+             <button class="PamphletCloseButton rounded-corners clearfix" id="s1ExistingSaveButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">Save</button>
+</div>
+           </div>
+          </div>
+         </div>
+         <div class="popup_anchor">
+          <div class="PamphletCloseButton PamphletLightboxPart popup_element rounded-corners clearfix" id="u307"><!-- group -->
+           <div class="clearfix grpelem" id="u308-4"><!-- content -->
+            <p>Cancel</p>
+           </div>
+          </div>
+         </div>
         </div>
        </div>
        <div class="Button rounded-corners clearfix grpelem" id="buttonu228"><!-- container box -->
         <div class="clip_frame grpelem" id="u230"><!-- image -->
-         <img class="block" id="u230_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="19" height="19"/>
+         <img class="block" id="u230_img" src="images/add19x19.png" data-hidpi-src="images/add19x19_2x.png" alt="" width="19" height="19"/>
         </div>
         <div class="clearfix grpelem" id="u229-4"><!-- content -->
          <p>create a new playlist with these songs</p>
+        </div>
+       </div>
+       <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu329"><!-- none box -->
+        <div class="ThumbGroup clearfix grpelem" id="u334"><!-- none box -->
+         <div class="popup_anchor">
+          <div class="Thumb popup_element" id="u335"><!-- simple frame --></div>
+         </div>
+        </div>
+        <div class="popup_anchor" id="u336popup">
+         <div class="ContainerGroup rgba-background clearfix" id="u336"><!-- stack box -->
+          <div class="Container clearfix grpelem" id="u337"><!-- column -->
+           <div class="clearfix colelem" id="pu338-4"><!-- group -->
+            <div class="clearfix grpelem" id="u338-4"><!-- content -->
+             <p>create a new playlist</p>
+            </div>
+            <div class="clip_frame grpelem" id="u345"><!-- image -->
+             <img class="block" id="u345_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="20" height="20"/>
+            </div>
+           </div>
+           <div class="clearfix colelem" id="u342-4"><!-- content -->
+            <p>you selected 15 mins of songs.</p>
+           </div>
+           <div class="clearfix colelem" id="u339-4"><!-- content -->
+            <p>enter the name of a new playlist and click save to make a new playlist from these songs</p>
+           </div>
+           <div class="colelem" id="u350"><!-- custom html -->
+            <input id="newPlayListInput1" style"width=200px;height=30px" placeholder="playlist name"></input>
+</div>
+           <div class="colelem" id="u352"><!-- rasterized frame --></div>
+           <div class="colelem" id="u343"><!-- custom html -->
+            <button class="PamphletCloseButton rounded-corners clearfix" id="s1NewPlaylistButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">Save</button>
+</div>
+          </div>
+         </div>
+        </div>
+        <div class="popup_anchor">
+         <div class="PamphletCloseButton PamphletLightboxPart popup_element rounded-corners clearfix" id="u347"><!-- group -->
+          <div class="clearfix grpelem" id="u348-4"><!-- content -->
+           <p>Cancel</p>
+          </div>
+         </div>
         </div>
        </div>
       </div>
      </div>
      <div class="grpelem" id="u185"><!-- custom html -->
       <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
-</div>
-     <div class="grpelem" id="u289"><!-- custom html -->
-      <button id="opener">open the dialog</button>
-<div id="modalTest" title="Dialog Title">I'm a dialog</div>
- 
-<script>
-$( "#modalTest" ).dialog({ autoOpen: false });
-
-$( "#opener" ).click(function() {
-
-   alert("test");
-  $( "#modalTest" ).dialog( "open" );
-});
-</script>
 </div>
     </div>
     <a class="anchor_item colelem" id="two"></a>
@@ -208,8 +335,54 @@ $( "#opener" ).click(function() {
       <p>&nbsp;</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="pu250"><!-- group -->
-     <div class="grpelem" id="u250"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="pppu356"><!-- group -->
+     <div class="clearfix grpelem" id="ppu356"><!-- column -->
+      <div class="clearfix colelem" id="pu356"><!-- group -->
+       <div class="rounded-corners clearfix grpelem" id="u356"><!-- group -->
+        <div class="clearfix grpelem" id="pu357"><!-- column -->
+         <div class="colelem" id="u357"><!-- custom html -->
+          <input id="searchInput2" placeholder="enter the name of an artist here.." style="width:300px; height:25px"/>
+</div>
+         <div class="colelem" id="u364"><!-- custom html -->
+          <div id="durationSlider2"></div>
+
+<script>
+$( "#durationSlider2" ).slider({
+step:15,
+value:15,
+min: 15,
+change: function(event, ui){
+durationSlider2Changed(event,ui);
+}
+});
+</script>
+
+</div>
+        </div>
+        <div class="Button rounded-corners clearfix grpelem" id="buttonu359"><!-- container box -->
+         <div class="clearfix grpelem" id="u362-4"><!-- content -->
+          <p>Search</p>
+         </div>
+         <div class="clip_frame grpelem" id="u360"><!-- image -->
+          <img class="block" id="u360_img" src="images/search.png" data-hidpi-src="images/search_2x.png" alt="" width="18" height="20"/>
+         </div>
+        </div>
+       </div>
+       <div class="grpelem" id="u363"><!-- rasterized frame --></div>
+       <div class="clearfix grpelem" id="u366-4"><!-- content -->
+        <p>adjust the duration of your playlist</p>
+       </div>
+       <div class="clearfix grpelem" id="u367-4"><!-- content -->
+        <p>15min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 90min</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="u355-4"><!-- content -->
+       <p>search results</p>
+      </div>
+      <div class="colelem" id="u369"><!-- custom html -->
+       <div id="u250" class="grpelem" style="height:200px; width:500px; border-width:2px; border-style:solid; overflow:scroll;">test</div>
+</div>
+     </div>
      <div class="grpelem" id="u256"><!-- custom html -->
       <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
 </div>
@@ -226,12 +399,9 @@ $( "#opener" ).click(function() {
       <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="pu267"><!-- group -->
-     <div class="grpelem" id="u267"><!-- simple frame --></div>
-     <div class="grpelem" id="u258"><!-- custom html -->
-      <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <div class="colelem" id="u258"><!-- custom html -->
+     <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
 </div>
-    </div>
     <div class="verticalspacer"></div>
    </div>
   </div>
@@ -245,6 +415,10 @@ $( "#opener" ).click(function() {
   <script src="scripts/museutils.js?275725342" type="text/javascript"></script>
   <script src="scripts/jquery.scrolleffects.js?206645848" type="text/javascript"></script>
   <script src="scripts/jquery.watch.js?3999102769" type="text/javascript"></script>
+  <script src="scripts/webpro.js?3883484123" type="text/javascript"></script>
+  <script src="scripts/musewpslideshow.js?360574455" type="text/javascript"></script>
+  <script src="scripts/jquery.museoverlay.js?342093292" type="text/javascript"></script>
+  <script src="scripts/touchswipe.js?4218319045" type="text/javascript"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
    $(document).ready(function() { try {
@@ -265,6 +439,14 @@ $('#u156-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{
 $('#u161').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
 $('#u162').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
 $('#u163').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
+Muse.Utils.initWidget('#pamphletu389', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu389 */
+$('#pamphletu389').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,731.9]},{"speed":[0,0],"in":[731.9,Infinity]}]);/* scroll effect */
+$('#u380').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,732]},{"speed":[0,0],"in":[732,Infinity]}]);/* scroll effect */
+$('#u380').registerOpacityScrollEffect([{"in":[-Infinity,732],"fade":0,"opacity":0},{"opacity":0,"in":[732,732]},{"in":[732,Infinity],"fade":52.55,"opacity":100}]);/* scroll effect */
+$('#u379-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,731.95]},{"speed":[0,0],"in":[731.95,Infinity]}]);/* scroll effect */
+$('#u379-4').registerOpacityScrollEffect([{"in":[-Infinity,731.95],"fade":0,"opacity":0},{"opacity":0,"in":[731.95,731.95]},{"in":[731.95,Infinity],"fade":51.6,"opacity":100}]);/* scroll effect */
+Muse.Utils.initWidget('#pamphletu291', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu291 */
+Muse.Utils.initWidget('#pamphletu329', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu329 */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
