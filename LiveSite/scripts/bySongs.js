@@ -1,7 +1,7 @@
 var api_key = 'WFHOQX2BKPZPVWRWC'
 
 
-function createPlaylist(songName, artistName, duration) {
+function createPlaylistSongs(songName, artistName, duration) {
 	playlist = []
 	req1 = {
 		api_key: api_key,
@@ -57,11 +57,11 @@ function createPlaylist(songName, artistName, duration) {
 						}
 						i++
 					}
-					$('#u166').html("<ul>");
+					$('#u250').html("<ul>");
 					for (var i=0; i<playlist.length; i++) {
-						$('#u166').append("<li data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "</li>")
+						$('#u250').append("<li data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "</li>")
 					}
-					$('#u166').append("</ul>");
+					$('#u250').append("</ul>");
 				}
 			})
 		}
@@ -69,9 +69,16 @@ function createPlaylist(songName, artistName, duration) {
 }
 
 $(document).ready(function() {
-	createPlaylist("karma police", "Radiohead", 60)
-	$('#u166').on("click", "li", function() {
+	$('#???').on("click", function() {
+		song = $('#???').val()
+		artist = $('#???').val()
+		duration = currentDuration1
+		createPlaylistSongs(song, artist, duration)
+	})
+	
+	$('#u250').on("click", "li", function() {
 		console.log($(this).data("ref"))
-		$('#u185').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
+		$('#u256').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
 	})
 })
+
