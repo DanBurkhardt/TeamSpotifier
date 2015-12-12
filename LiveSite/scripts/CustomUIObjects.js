@@ -23,6 +23,15 @@ function durationSlider1Changed(event, ui){
 };
 
 
+/*
+/       JQUERY Dialog Configuration
+*/
+$(document).ready(function(){
+   
+
+});
+
+
 
 /*
 /       Scenario 1 - Button Actions
@@ -34,6 +43,9 @@ function scenario1Listeners(){
         
             // TODO: Code here for dialogue boxes confirming which list to add to
     });
+    
+    
+    
 };
 
 

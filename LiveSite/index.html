@@ -10,37 +10,34 @@
   <meta name="generator" content="2015.0.2.310"/>
   <title>Home</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?453856629"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?4212012179" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?4052507572"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?466334504" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
 </script>
   <!-- JS includes -->
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/h_IWVfpqR1dilSELpYwy3HB-RHo9l-RqZ9eERbQ1IFjfeGCgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMYJ0-hDgb.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/pD2cywn7B2wEngNRO2enK4frVu3DiIZRiW_7Yh92LgSfeGCgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MKG4fOUbIMMjMkMfP6sFiWF8qMYKaEhDgb.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
 </script>
     <!--custom head HTML-->
-  <script src="scripts/jquery-2.1.4.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<style>#slider { margin: 10px; }	</style>
 
 <script src="scripts/CustomUIObjects.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <style>#slider { margin: 10px; }	</style>
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
 <script src="scripts/byRange.js" type="text/javascript"></script>
 <script src="scripts/byArtist.js" type="text/javascript"></script>
 <script src="scripts/bySongs.js" type="text/javascript"></script>
 
 <script src="https://use.typekit.net/ugx3enr.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
   <!--HTML Widget code-->
   
  
@@ -90,11 +87,6 @@
 $(document).ready(function(){
 
 scenario1Listeners();
-
-$( "#dialog" ).dialog({ autoOpen: false });
-$( "#opener" ).click(function() {
-  $( "#dialog" ).dialog( "open" );
-});
 
 });
 </script>
@@ -187,6 +179,20 @@ durationSlider1Changed(event,ui);
      </div>
      <div class="grpelem" id="u185"><!-- custom html -->
       <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
+     <div class="grpelem" id="u289"><!-- custom html -->
+      <button id="opener">open the dialog</button>
+<div id="modalTest" title="Dialog Title">I'm a dialog</div>
+ 
+<script>
+$( "#modalTest" ).dialog({ autoOpen: false });
+
+$( "#opener" ).click(function() {
+
+   alert("test");
+  $( "#modalTest" ).dialog( "open" );
+});
+</script>
 </div>
     </div>
     <a class="anchor_item colelem" id="two"></a>
