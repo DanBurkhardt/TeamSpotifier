@@ -8,6 +8,20 @@
 / button instead of text
 */
 body {
-    cursor:default;
+	cursor:default;
 }
+
+.myresult {
+	padding: 5px 5px 5px 5px; 
+}
+
+.myresult:hover{
+	background-color: #dddddd;
+}
+
+.myresult li span {
+	float:right
+}
+
+
 

@@ -41,9 +41,10 @@ function createPlaylistArtist(artistName, duration) {
 							if (d>duration*60 && !reached) {
 								reached = true
 								console.log(playlist)
-								$('#u166').html("<ul>");
+								$('#u166').html("");
+								$('#u166').append("<ul>");
 								for (var i=0; i<playlist.length; i++) {
-									$('#u166').append("<li data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "</li>")
+									$('#u166').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
 								}
 								$('#u166').append("</ul>");
 							}
@@ -58,16 +59,4 @@ function createPlaylistArtist(artistName, duration) {
 	})
 }
 
-$(document).ready(function() {
-	$('#buttonu199').on("click", function() {
-		artist = $('#bobInput').val()
-		duration = currentDuration1
-		createPlaylistArtist(artist, duration)
-	})
-	
-	$('#u166').on("click", "li", function() {
-		console.log($(this).data("ref"))
-		$('#u185').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
-	})
-})
 
