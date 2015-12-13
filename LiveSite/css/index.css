@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #000010;
-	background-color: #5AA45C;
+	color: #000009;
+	background-color: #4B6FD5;
 }
 
 .html
@@ -77,9 +77,9 @@
 	min-height: 16px;
 	background-color: transparent;
 	line-height: 23px;
-	color: #FFFFFF;
 	text-align: center;
 	font-size: 19px;
+	color: #FFFFFF;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -94,9 +94,9 @@
 	min-height: 16px;
 	background-color: transparent;
 	line-height: 23px;
-	color: #FFFFFF;
 	text-align: center;
 	font-size: 19px;
+	color: #FFFFFF;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -111,9 +111,9 @@
 	min-height: 16px;
 	background-color: transparent;
 	line-height: 23px;
-	color: #FFFFFF;
 	text-align: center;
 	font-size: 19px;
+	color: #FFFFFF;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -128,9 +128,9 @@
 	min-height: 27px;
 	background-color: transparent;
 	line-height: 12px;
-	color: #FFFFFF;
 	text-align: left;
 	font-size: 10px;
+	color: #FFFFFF;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -515,9 +515,9 @@
 	border-color: transparent;
 	background-color: transparent;
 	line-height: 32px;
-	color: #FFFFFF;
 	text-align: center;
 	font-size: 23px;
+	color: #FFFFFF;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -1043,8 +1043,8 @@
 	border-color: transparent;
 	background-color: transparent;
 	line-height: 20px;
-	color: #000000;
 	text-align: center;
+	color: #000000;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	position: relative;
@@ -1224,9 +1224,9 @@
 	width: 304px;
 	min-height: 30px;
 	background-color: transparent;
-	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
+	line-height: 23px;
 	margin-top: 18px;
 	position: relative;
 }
@@ -1318,8 +1318,8 @@
 	border-color: transparent;
 	background-color: transparent;
 	line-height: 20px;
-	color: #000000;
 	text-align: center;
+	color: #000000;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	position: relative;
@@ -1383,7 +1383,7 @@
 #u248-5
 {
 	z-index: 70;
-	width: 592px;
+	width: 745px;
 	min-height: 139px;
 	background-color: transparent;
 	text-align: left;
@@ -1398,7 +1398,7 @@
 {
 	width: 0.01px;
 	margin-left: 85px;
-	margin-top: 4px;
+	margin-top: 1px;
 }
 
 #ppu356
@@ -1496,7 +1496,7 @@
 	padding-bottom: 3px;
 	position: relative;
 	margin-right: -10000px;
-	margin-top: 14px;
+	margin-top: 20px;
 	left: 412px;
 }
 
@@ -1505,7 +1505,7 @@
 	background-color: #CACACA;
 	width: 67px;
 	min-height: 0px;
-	margin: 14px -10000px 0px 0px;
+	margin: 20px -10000px 0px 0px;
 }
 
 #buttonu359.ButtonSelected
@@ -1513,7 +1513,7 @@
 	background-color: #FFFFFF;
 	width: 67px;
 	min-height: 0px;
-	margin: 14px -10000px 0px 0px;
+	margin: 20px -10000px 0px 0px;
 }
 
 #u362-4
@@ -1818,7 +1818,7 @@
 	background-color: #191919;
 	background-color: rgba(0,0,0,0.9);
 	padding-bottom: 44px;
-	top: -337px;
+	top: -346px;
 	left: 464px;
 	-pie-background: rgba(0,0,0,0.9);
 }
@@ -1840,7 +1840,7 @@
 	position: relative;
 	top: 22px;
 	left: 22px;
-	padding: 22px 4px 44px 3px;
+	padding: 22px 4px 53px 3px;
 }
 
 #u512-4
@@ -1931,7 +1931,7 @@
 	background-color: #C4C4C4;
 	border-radius: 10px;
 	padding-bottom: 5px;
-	top: -78px;
+	top: -86px;
 	left: 662px;
 }
 
@@ -1952,8 +1952,8 @@
 	border-color: transparent;
 	background-color: transparent;
 	line-height: 20px;
-	color: #000000;
 	text-align: center;
+	color: #000000;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	position: relative;
@@ -2170,9 +2170,9 @@
 	width: 304px;
 	min-height: 30px;
 	background-color: transparent;
-	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
+	line-height: 23px;
 	margin-top: 18px;
 	position: relative;
 }
@@ -2272,8 +2272,8 @@
 	border-color: transparent;
 	background-color: transparent;
 	line-height: 20px;
-	color: #000000;
 	text-align: center;
+	color: #000000;
 	font-family: brandon-grotesque, sans-serif;
 	font-weight: 500;
 	position: relative;
@@ -2299,7 +2299,7 @@
 #three
 {
 	margin-left: 42px;
-	margin-top: 178px;
+	margin-top: 212px;
 	position: relative;
 }
 
