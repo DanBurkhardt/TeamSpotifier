@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450020595967">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450022295253">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -16,16 +16,18 @@
     <file name="add19x19_2x.png" crc="264812295" seo="true" ref="index"/>
     <file name="u352.png" crc="4183019336" ref="index"/>
     <file name="u352_2x.png" crc="58712043" ref="index"/>
-    <file name="u363.png" crc="319123124" ref="index"/>
-    <file name="u363_2x.png" crc="3887323488" ref="index"/>
+    <file name="u363.png" crc="64757942" ref="index"/>
+    <file name="u363_2x.png" crc="4169463297" ref="index"/>
     <file name="playlists.png" crc="205681089" seo="true" ref="index"/>
     <file name="playlists_2x.png" crc="65176156" seo="true" ref="index"/>
     <file name="managelist.png" crc="364658062" seo="true" ref="index"/>
     <file name="managelist_2x.png" crc="3773494723" seo="true" ref="index"/>
+    <file name="u436.png" crc="64757942" ref="index"/>
+    <file name="u436_2x.png" crc="4169463297" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="4162748491" ref="index"/>
+    <file name="index.css" crc="3898565876" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -38,5 +40,5 @@
     <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
   </folder>
-  <file name="index.html" crc="106896932" seo="true" mt="1450020577066" redirect="true"/>
+  <file name="index.html" crc="190644309" seo="true" mt="1450022289997" redirect="true"/>
 </manifest>
