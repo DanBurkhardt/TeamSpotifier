@@ -59,7 +59,7 @@ function createPlaylistSongs(songName, artistName, duration) {
 					}
 					$('#u250').html("<ul>");
 					for (var i=0; i<playlist.length; i++) {
-						$('#u250').append("<li data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "</li>")
+						$('#u250').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
 					}
 					$('#u250').append("</ul>");
 				}
@@ -67,18 +67,4 @@ function createPlaylistSongs(songName, artistName, duration) {
 		}
 	})
 }
-
-$(document).ready(function() {
-	$('#???').on("click", function() {
-		song = $('#???').val()
-		artist = $('#???').val()
-		duration = currentDuration1
-		createPlaylistSongs(song, artist, duration)
-	})
-	
-	$('#u250').on("click", "li", function() {
-		console.log($(this).data("ref"))
-		$('#u256').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
-	})
-})
 

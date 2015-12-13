@@ -129,6 +129,7 @@ function scenario1Listeners(){
         }
     });
 
+    // NOT WORKING DON'T KNOW WHY
     $('#buttonu228').on("click", function() {
         alert('ok')
         $('#newPlayListInput1').val('');
@@ -163,11 +164,24 @@ function scenario2Listeners(){
     
      // Firing off a search from input
     $( "#buttonu359" ).click(function() {
-        alert( "search button clicked" );
-        
-            // TODO: Code here for triggering the save action to the playlist
+        artist = $('#artistInput').val()
+        song = $('#songInput').val()
+        duration = currentDuration2
+        createPlaylistSongs(song, artist, duration)
     });
 
+    // Changing the Play widget when clicking on song
+    $('#u250').on("click", "li", function() {
+        console.log($(this).data("ref"))
+        $('#u256').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
+    });
+
+    // Removing song from playlist when clicking on remove
+    $('#u250').on("click", "span", function() {
+        idx = $(this).parent().data("idx")
+        playlist.splice(idx, 1)
+        $(this).parent().parent().hide()
+    });
     
 };// END SCENARIO 2 LISTENERS
 
