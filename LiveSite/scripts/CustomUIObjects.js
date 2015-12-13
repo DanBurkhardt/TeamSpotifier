@@ -9,6 +9,30 @@ var currentDuration1 = "15";
 // current duration for scenario 2
 var currentDuration2 = "15";
 
+// current duration for scenario 3
+var currentDuration3 = "15";
+
+// current min energy for scenario 3
+var currentMinEnergy = "0";
+
+// current max energy for scenario 3
+var currentMaxEnergy = "1";
+
+// current min danceability for scenario 3
+var currentMinDanceability = "0";
+
+// current max danceability for scenario 3
+var currentMaxDanceability = "1";
+
+// current min liveness for scenario 3
+var currentMinLiveness = "0";
+
+// current max liveness for scenario 3
+var currentMaxLiveness = "1";
+
+
+
+
 // globalPL
 var globalPL = {}
 
@@ -22,11 +46,11 @@ function durationSlider1Changed(event, ui){
     // Add fuction for refreshing the table with results that match the duration
     
     // Replace the button text with the updated duration
-    $('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
+    // $('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
     // Replace new playlist header
-    $('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
+    // $('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
     // Replace add to existing header
-    $('#u342-4').replaceWith('<div class=\"clearfix colelem\" id=\"u342-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
+    // $('#u342-4').replaceWith('<div class=\"clearfix colelem\" id=\"u342-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
     
     // Assign new slider duration to global variable
     currentDuration1 = ui.value;
@@ -44,11 +68,11 @@ function durationSlider2Changed(event,ui){
     // Add fuction for refreshing the table with results that match the duration
     
     // Replace the button text with the updated duration
-    $('#u501-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u501-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
+    // $('#u501-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u501-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
     // Replace new playlist header
-    $('#u533-4').replaceWith('<div class=\"clearfix colelem\" id=\"u533-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
+    // $('#u533-4').replaceWith('<div class=\"clearfix colelem\" id=\"u533-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
     // Replace add to existing header
-    $('#u513-4').replaceWith('<div class=\"clearfix colelem\" id=\"u513-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
+    // $('#u513-4').replaceWith('<div class=\"clearfix colelem\" id=\"u513-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
     
     
     // Assign the new duration to the global variable
@@ -61,26 +85,30 @@ function durationSlider2Changed(event,ui){
 */
 // Sliders for different user provided params
 function energySliderChanged(event,ui){
-   
-    alert("Energy value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+    currentMinEnergy = ui.values[0];
+    currentMaxEnergy = ui.values[1];
+    // alert("Energy value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
 
-function loudnessSliderChanged(event,ui){
-   
-    alert("Loudness value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+function danceabilitySliderChanged(event,ui){
+    currentMinDanceability = ui.values[0];
+    currentMaxDanceability = ui.values[1];
+    // alert("Loudness value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
 
-function tempoSliderChanged(event,ui){
-   
-    alert("Tempo value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+function livenessSliderChanged(event,ui){
+    currentMinLiveness = ui.values[0];
+    currentMaxLiveness = ui.values[1];
+    // alert("Tempo value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
 // Duration slider without range
 function durationSlider3Changed(event,ui){
 
-    alert("Duration value changed: "+ui.value);
+    // Assign the new duration to the global variable
+    currentDuration3 = ui.value;
 }
 
 
@@ -225,6 +253,17 @@ function scenario2Listeners(){
 /       Scenario 3 Event Listeners
 */
 function scenario3Listeners(){
+     // Firing off a search from input
+    $( "#buttonu615" ).click(function() {        
+        selectedDuration = currentDuration3
+        minEnergy = currentMinEnergy
+        maxEnergy = currentMaxEnergy
+        minDanceability = currentMinDanceability
+        maxDanceability = currentMaxDanceability
+        minLiveness = currentMinLiveness
+        maxLiveness = currentMaxLiveness
+        getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration)
+    });
 
 };// END SCENARIO 3 LISTENERS
 
