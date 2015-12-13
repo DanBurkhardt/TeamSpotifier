@@ -9,6 +9,9 @@ var currentDuration1 = "15";
 // current duration for scenario 2
 var currentDuration2 = "15";
 
+// globalPL
+var globalPL = {'empty': []}
+
 /*
 /       JQUERY Scenario 1
 */
@@ -68,27 +71,59 @@ $(document).ready(function(){
 /       Scenario 1 Event Listeners
 */
 function scenario1Listeners(){
+
+    // If div is empty, hide: Play widget, Add button, Create button
+    // TODO
     
      // Firing off a search from input
     $( "#buttonu199" ).click(function() {
-        alert( "search button clicked" );
-        
-            // TODO: Code here for triggering the save action to the playlist
+        artist = $('#bobInput').val()
+        duration = currentDuration1
+        createPlaylistArtist(artist, duration)
     });
     
+    // Changing the Play widget when clicking on song
+    $('#u166').on("click", "li", function() {
+        console.log($(this).data("ref"))
+        $('#u185').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
+    });
+
+    // Removing song from playlist when clicking on remove
+    $('#u166').on("click", "span", function() {
+        idx = $(this).parent().data("idx")
+        playlist.splice(idx, 1)
+        $(this).parent().parent().hide()
+    });
+
+    // Filling in first dropdown based on globalPL
+    $('#buttonu212').on("click", function() {
+        $('#u322').find("#scenario1PlaylistSelector").html("")
+        for (pl in globalPL) {
+            $('#u322').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+        }
+    });
+
+    $('#buttonu228').on("click", function() {
+        alert('ok')
+        $('#newPlayListInput1').val('');
+    });
     
     // For saving song selection to an existing playlist
     $( "#s1ExistingSaveButton" ).click(function() {
-        alert( "Save button clicked" );
-        
-            // TODO: Code here for triggering the save action to the playlist
+        name = $('#u322').find("#scenario1PlaylistSelector").val()
+        globalPL[name].push.apply(globalPL[name], playlist)
+        alert( "Playlist added successfully!" );
     });
     
     // For saving a new playlist to the local storage location of playlists
     $( "#s1NewPlaylistButton" ).click(function() {
-        alert( "New playlist save button clicked" );
-        
-            // TODO: Code here for triggering the save action to the playlist
+        name = $('#newPlayListInput1').val()
+        if (name in globalPL || name == '') {
+            alert('You must enter a (non-existing) name for your playlist')
+        } else {
+            globalPL[name] = playlist
+            alert('Playlist added successfully!')
+        }        
     });
     
 };// END SCENARIO 1 LISTENERS
