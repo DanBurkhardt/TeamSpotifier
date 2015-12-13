@@ -158,7 +158,7 @@ function scenario1Listeners(){
         } else {
             globalPL[name] = playlist
             alert('Playlist added successfully!')
-        }        
+        }
     });
     
 };// END SCENARIO 1 LISTENERS
@@ -189,6 +189,32 @@ function scenario2Listeners(){
         idx = $(this).parent().data("idx")
         playlist.splice(idx, 1)
         $(this).parent().parent().hide()
+    });
+
+    // Filling in first dropdown based on globalPL
+    $('#buttonu497').on("click", function() {
+        $('#u514').find("#scenario2PlaylistSelector").html("")
+        for (pl in globalPL) {
+            $('#u514').find("#scenario2PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+        }
+    });
+   
+    // For saving song selection to an existing playlist
+    $( "#s2ExistingSaveButton" ).click(function() {
+        name = $('#u514').find("#scenario2PlaylistSelector").val()
+        globalPL[name].push.apply(globalPL[name], playlist)
+        alert( "Playlist added successfully!" );
+    });
+    
+    // For saving a new playlist to the local storage location of playlists
+    $( "#s2NewPlaylistButton" ).click(function() {
+        name = $('#newPlayListInput1').val()
+        if (name in globalPL || name == '') {
+            alert('You must enter a (non-existing) name for your playlist')
+        } else {
+            globalPL[name] = playlist
+            alert('Playlist added successfully!')
+        }        
     });
     
 };// END SCENARIO 2 LISTENERS
