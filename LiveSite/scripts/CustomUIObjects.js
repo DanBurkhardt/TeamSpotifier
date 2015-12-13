@@ -256,12 +256,12 @@ function scenario3Listeners(){
      // Firing off a search from input
     $( "#buttonu615" ).click(function() {        
         selectedDuration = currentDuration3
-        minEnergy = currentMinEnergy
-        maxEnergy = currentMaxEnergy
-        minDanceability = currentMinDanceability
-        maxDanceability = currentMaxDanceability
-        minLiveness = currentMinLiveness
-        maxLiveness = currentMaxLiveness
+        minEnergy = currentMinEnergy / 100
+        maxEnergy = currentMaxEnergy / 100
+        minDanceability = currentMinDanceability / 100
+        maxDanceability = currentMaxDanceability / 100
+        minLiveness = currentMinLiveness / 100
+        maxLiveness = currentMaxLiveness / 100
         getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration)
     });
 
