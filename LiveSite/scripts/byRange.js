@@ -1,11 +1,6 @@
 function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration) {	
-	minEnergy = 0.9
-	maxEnergy = 1
-	minDanceability = 0
-	maxDanceability = 1
-	minLiveness = 0
-	maxLiveness = 1
-	selectedDuration = 1000.0
+	
+	selectedDuration = selectedDuration * 60
 	api_key = 'BM2P96SJVHMHJHKHP'
 	var url_string = 'http://developer.echonest.com/api/v4/song/search?api_key=BM2P96SJVHMHJHKHP&min_energy='+minEnergy+'&max_energy='+maxEnergy+'&min_danceability='+minDanceability+'&max_danceability='+maxDanceability+'&min_liveness='+minLiveness+'&max_liveness='+maxLiveness+'&results=100&bucket=tracks&bucket=id:spotify&bucket=audio_summary'
 	songList = []
@@ -18,7 +13,7 @@ function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability
 	        for(var i = 0; i<len; i++) {
 	        	try{
 	        		duration = json.response.songs[i].audio_summary.duration        		
-					if(json.response.songs[i].tracks.length > 0 && d < duration){
+					if(json.response.songs[i].tracks.length > 0 && d < selectedDuration){
 						d += duration
 						songList.push({
 						artist: json.response.songs[i].artist_name,
@@ -34,20 +29,12 @@ function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability
 	        if(songList.length==0){
 	        	results_header.innerHTML = results_header.innerHTML + "No results found"
 	        }
-	        $('#u166').html("<ul>");
+	        $('#useCaseThreeDiv').html("");
+			$('#useCaseThreeDiv').append("<ul>");
 			for (var i=0; i<songList.length; i++) {
-				$('#u166').append("<li data-ref='" + songList[i]['spotify'] + "'>" + songList[i]['title'] + ", " + songList[i]['artist'] + "</li>")
+				$('#useCaseThreeDiv').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + songList[i]['spotify'] + "'>" + songList[i]['title'] + ", " + songList[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
 			}
-			$('#u166').append("</ul>");
-	        // console.log(songList)        
+			$('#useCaseThreeDiv').append("</ul>");
      	}
     });     
 }
-
-// $(document).ready(function() {
-// 	getSearchResults(0.9, 1, 0, 1, 0, 1, 1000)
-// 	$('#u166').on("click", "li", function() {
-// 		console.log($(this).data("ref"))
-// 		$('#u185').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
-// 	})
-// })
