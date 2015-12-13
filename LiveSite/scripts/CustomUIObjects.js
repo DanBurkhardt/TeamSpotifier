@@ -73,9 +73,10 @@ function tempoSliderChanged(event,ui){
     alert("Tempo value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
-function durationRangeSliderChanged(event,ui){
+// Duration slider without range
+function durationSlider3Changed(event,ui){
 
-    alert("Duration value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);
+    alert("Duration value changed: "+ui.value);
 }
 
 

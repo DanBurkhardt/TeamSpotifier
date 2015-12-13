@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #0000E8;
-	background-color: #5F64F4;
+	color: #0000F1;
+	background-color: #979708;
 }
 
 .html
@@ -1467,7 +1467,7 @@
 {
 	width: 0.01px;
 	margin-left: 85px;
-	margin-top: 18px;
+	margin-top: 4px;
 }
 
 #page_position_content,#pu184-4,#pu356
@@ -1718,6 +1718,7 @@
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-left: 3px;
+	margin-top: 14px;
 	position: relative;
 }
 
@@ -1744,6 +1745,7 @@
 	background-color: transparent;
 	position: relative;
 	margin-right: -10000px;
+	margin-top: 14px;
 	left: 549px;
 }
 
