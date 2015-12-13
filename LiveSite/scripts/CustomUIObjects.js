@@ -10,7 +10,7 @@ var currentDuration1 = "15";
 var currentDuration2 = "15";
 
 // globalPL
-var globalPL = {'empty': []}
+var globalPL = {}
 
 /*
 /       JQUERY Scenario 1
@@ -89,6 +89,10 @@ $(document).ready(function(){
     scenario1Listeners();
     // Activate listeners for scenario 2
     scenario2Listeners();
+    // Activate listeners for scenario 3
+    scenario3Listeners();
+    // Activate listeners for "Manage Playlists"
+    manageListeners();
 });
 
 
@@ -185,3 +189,54 @@ function scenario2Listeners(){
     
 };// END SCENARIO 2 LISTENERS
 
+
+
+/*
+/       Scenario 3 Event Listeners
+*/
+function scenario3Listeners(){
+
+};// END SCENARIO 3 LISTENERS
+
+
+
+/*
+/       "Manage Playlists" Event Listeners
+*/
+function manageListeners(){
+
+    // Filling in second dropdown based on globalPL
+    $('#u393').on("click", function() {
+        $('#u408').find('#scenario1PlaylistSelector').html("")
+        for (pl in globalPL) {
+            $('#u408').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+        }
+        // Display playlist songs on the right
+        playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+        $('#managePlaylistDiv').html("")
+        $('#managePlaylistDiv').append("<ul>");
+        for (i=0; i<playlist.length; i++) {
+            $('#managePlaylistDiv').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+        }
+        $('#managePlaylistDiv').append("</ul>");
+    })
+
+    // Display playlist songs on change
+    $('#u408').on("change", "#scenario1PlaylistSelector", function() {
+        playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+        $('#managePlaylistDiv').html("")
+        $('#managePlaylistDiv').append("<ul>");
+        for (i=0; i<playlist.length; i++) {
+            $('#managePlaylistDiv').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+        }
+        $('#managePlaylistDiv').append("</ul>");
+    })
+
+    // Removing song from playlist when clicking on remove
+    $('#managePlaylistDiv').on("click", "span", function() {
+        idx = $(this).parent().data("idx")
+        playlist.splice(idx, 1)
+        $(this).parent().parent().hide()
+    });
+
+};// END MANAGE PLAYLIST LISTENERS
