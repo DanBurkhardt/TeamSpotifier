@@ -158,7 +158,7 @@ function scenario1Listeners(){
         } else {
             globalPL[name] = playlist
             alert('Playlist added successfully!')
-        }        
+        }
     });
     
 };// END SCENARIO 1 LISTENERS
@@ -206,8 +206,16 @@ function scenario2Listeners(){
         alert( "Playlist added successfully!" );
     });
     
-    // TODO
     // For saving a new playlist to the local storage location of playlists
+    $( "#s2NewPlaylistButton" ).click(function() {
+        name = $('#newPlayListInput1').val()
+        if (name in globalPL || name == '') {
+            alert('You must enter a (non-existing) name for your playlist')
+        } else {
+            globalPL[name] = playlist
+            alert('Playlist added successfully!')
+        }        
+    });
     
 };// END SCENARIO 2 LISTENERS
 
