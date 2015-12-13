@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450026256425">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450034846471">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -6,8 +6,8 @@
     <file name="downarrow_2x.png" crc="329083818" seo="true" ref="index"/>
     <file name="avaone.jpg" crc="141801685" seo="true" ref="index"/>
     <file name="avaone_2x.jpg" crc="279327328" seo="true" ref="index"/>
-    <file name="search.png" crc="186269174" seo="true" ref="index"/>
-    <file name="search_2x.png" crc="3877201586" seo="true" ref="index"/>
+    <file name="search.png" crc="535171820" seo="true" ref="index"/>
+    <file name="search_2x.png" crc="4020154971" seo="true" ref="index"/>
     <file name="add.png" crc="4087481514" seo="true" ref="index"/>
     <file name="add_2x.png" crc="469823035" seo="true" ref="index"/>
     <file name="u241.png" crc="319123124" ref="index"/>
@@ -24,10 +24,12 @@
     <file name="managelist_2x.png" crc="3773494723" seo="true" ref="index"/>
     <file name="u436.png" crc="64757942" ref="index"/>
     <file name="u436_2x.png" crc="4169463297" ref="index"/>
+    <file name="u531.png" crc="4183019336" ref="index"/>
+    <file name="u531_2x.png" crc="58712043" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="4053243656" ref="index"/>
+    <file name="index.css" crc="274375772" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -40,5 +42,5 @@
     <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
   </folder>
-  <file name="index.html" crc="3882322630" seo="true" mt="1450026250815" redirect="true"/>
+  <file name="index.html" crc="123924859" seo="true" mt="1450034840758" redirect="true"/>
 </manifest>

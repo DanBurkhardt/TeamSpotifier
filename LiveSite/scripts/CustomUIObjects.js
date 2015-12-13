@@ -23,8 +23,10 @@ function durationSlider1Changed(event, ui){
     
     // Replace the button text with the updated duration
     $('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
-    
-    $('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>You selected '+ui.value+' mins of songs.</p></div>'); 
+    // Replace new playlist header
+    $('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
+    // Replace add to existing header
+    $('#u342-4').replaceWith('<div class=\"clearfix colelem\" id=\"u342-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
     
     // Assign new slider duration to global variable
     currentDuration1 = ui.value;
@@ -35,16 +37,18 @@ function durationSlider1Changed(event, ui){
 /*
 /       JQUERY Scenario 2
 */
-function durationSlider2Changed(event, ui){
+function durationSlider2Changed(event,ui){
     
-    alert("S2 value changed to:"+ui.value);
+    //alert("S2 value changed to:"+ui.value);
     
     // Add fuction for refreshing the table with results that match the duration
     
     // Replace the button text with the updated duration
-    //$('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
-    
-    //$('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>You selected '+ui.value+' mins of songs.</p></div>'); 
+    $('#u501-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u501-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
+    // Replace new playlist header
+    $('#u533-4').replaceWith('<div class=\"clearfix colelem\" id=\"u533-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
+    // Replace add to existing header
+    $('#u513-4').replaceWith('<div class=\"clearfix colelem\" id=\"u513-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
     
     
     // Assign the new duration to the global variable
