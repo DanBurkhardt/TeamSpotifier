@@ -52,6 +52,31 @@ function durationSlider2Changed(event, ui){
     
 };
 
+/*
+/       JQUERY Scenario 3
+*/
+// Sliders for different user provided params
+function energySliderChanged(event,ui){
+   
+    alert("Energy value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+};
+
+
+function loudnessSliderChanged(event,ui){
+   
+    alert("Loudness value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+};
+
+
+function tempoSliderChanged(event,ui){
+   
+    alert("Tempo value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
+};
+
+function durationRangeSliderChanged(event,ui){
+
+    alert("Duration value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);
+}
 
 
 /*

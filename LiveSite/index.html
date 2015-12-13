@@ -11,7 +11,7 @@
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4144991806"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?4065716506" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?4162748491" id="pagesheet"/>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className += ' js';
@@ -22,7 +22,7 @@ var __adobewebfontsappname__ = "muse";
    document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/asap:n7,n4:default.js" type="text/javascript">\x3C/script>');
 </script>
   <script type="text/javascript">
-   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/m0bgGGgprOsHyWOiAjsxzpdvEIT3rZ8BRHLVcUKPagtfeGMgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MqGIQWmDZZMgzS7UC39.js" type="text/javascript">\x3C/script>');
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/Nx_P0wmr5IXgbdzyxGNtJauh7bWLV-Fpv1VseXkOni6feGMgf5rzVsJGwQM3FQ9uwmvuFeZcwD4RwRB8FRFKZRbXFD88FDMDFRyqFQI3jRqXwyG8iemydWF3dasTZc88SKoRdhXCHKoXZABlSagzie8c-AmkOcFzdPJsj14ydcszdKu1ScNXZWFUiA97fbKr9gMMeM96MqGIQWmDZZMgvohhC39.js" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -343,7 +343,7 @@ durationSlider1Changed(event,ui);
        <div class="rounded-corners clearfix grpelem" id="u356"><!-- group -->
         <div class="clearfix grpelem" id="pu357"><!-- column -->
          <div class="colelem" id="u357"><!-- custom html -->
-          <input id="searchInput2" placeholder="enter the name of an artist here.." style="width:300px; height:25px"/>
+          <input id="searchInput2" placeholder="enter the name of an artist and a song here.." style="width:300px; height:25px"/>
 </div>
          <div class="colelem" id="u364"><!-- custom html -->
           <div id="durationSlider2"></div>
@@ -401,9 +401,100 @@ durationSlider2Changed(event,ui);
       <p>Bob use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario use scenario</p>
      </div>
     </div>
-    <div class="colelem" id="u258"><!-- custom html -->
-     <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+    <div class="clearfix colelem" id="u431-4"><!-- content -->
+     <p>duration</p>
+    </div>
+    <div class="colelem" id="u429"><!-- custom html -->
+     <div id="durationRangeSlider"></div>
+
+<script>
+$( "#durationRangeSlider" ).slider({
+range:true,
+min: 0,
+max:100,
+values: [0,30],
+slide: function(event, ui){
+
+durationRangeSliderChanged(event,ui)
+
+}
+});
+</script>
+
 </div>
+    <div class="clearfix colelem" id="ppu426-4"><!-- group -->
+     <div class="clearfix grpelem" id="pu426-4"><!-- column -->
+      <div class="clearfix colelem" id="u426-4"><!-- content -->
+       <p>energy</p>
+      </div>
+      <div class="colelem" id="u420"><!-- custom html -->
+       <div id="energySlider"></div>
+
+<script>
+$( "#energySlider" ).slider({
+range:true,
+min: 0,
+max:100,
+values: [0,30],
+slide: function(event, ui){
+
+energySliderChanged(event,ui);
+
+}
+});
+</script>
+
+</div>
+      <div class="clearfix colelem" id="u427-4"><!-- content -->
+       <p>loudness</p>
+      </div>
+      <div class="colelem" id="u422"><!-- custom html -->
+       <div id="loudnessSlider"></div>
+
+<script>
+$( "#loudnessSlider" ).slider({
+range:true,
+min: 0,
+max:100,
+values: [0,30],
+slide: function(event, ui){
+
+loudnessSliderChanged(event, ui);
+
+}
+});
+</script>
+
+</div>
+      <div class="clearfix colelem" id="u428-4"><!-- content -->
+       <p>tempo</p>
+      </div>
+      <div class="colelem" id="u424"><!-- custom html -->
+       <div id="tempoSlider"></div>
+
+<script>
+$( "#tempoSlider" ).slider({
+range:true,
+min: 0,
+max:100,
+values: [0,30],
+slide: function(event, ui){
+
+tempoSliderChanged(event,ui);
+
+}
+});
+</script>
+
+</div>
+      <div class="colelem" id="u432"><!-- custom html -->
+       <div id="useCaseThreeDiv" class="grpelem" style="height:200px; width:500px; border-width:2px; border-style:solid; overflow:scroll;">test</div>
+</div>
+     </div>
+     <div class="grpelem" id="u258"><!-- custom html -->
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
+    </div>
     <div class="verticalspacer"></div>
    </div>
   </div>
@@ -445,9 +536,9 @@ $('#u163').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"s
 Muse.Utils.initWidget('#pamphletu389', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu389 */
 $('#pamphletu389').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,731.9]},{"speed":[0,0],"in":[731.9,Infinity]}]);/* scroll effect */
 $('#u380').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,732]},{"speed":[0,0],"in":[732,Infinity]}]);/* scroll effect */
-$('#u380').registerOpacityScrollEffect([{"in":[-Infinity,732],"fade":0,"opacity":0},{"opacity":0,"in":[732,732]},{"in":[732,Infinity],"fade":52.55,"opacity":100}]);/* scroll effect */
+$('#u380').registerOpacityScrollEffect([{"fade":0,"in":[-Infinity,732],"opacity":0},{"opacity":0,"in":[732,732]},{"fade":52.55,"in":[732,Infinity],"opacity":100}]);/* scroll effect */
 $('#u379-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,731.95]},{"speed":[0,0],"in":[731.95,Infinity]}]);/* scroll effect */
-$('#u379-4').registerOpacityScrollEffect([{"in":[-Infinity,731.95],"fade":0,"opacity":0},{"opacity":0,"in":[731.95,731.95]},{"in":[731.95,Infinity],"fade":51.6,"opacity":100}]);/* scroll effect */
+$('#u379-4').registerOpacityScrollEffect([{"fade":0,"in":[-Infinity,731.95],"opacity":0},{"opacity":0,"in":[731.95,731.95]},{"fade":51.6,"in":[731.95,Infinity],"opacity":100}]);/* scroll effect */
 Muse.Utils.initWidget('#pamphletu291', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu291 */
 Muse.Utils.initWidget('#pamphletu329', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu329 */
 Muse.Utils.fullPage('#page');/* 100% height page */
