@@ -226,7 +226,7 @@ function scenario1Listeners(){
     // For saving song selection to an existing playlist
     $( "#s1ExistingSaveButton" ).click(function() {
         name = $('#u322').find("#scenario1PlaylistSelector").val()
-        globalPL[name].push.apply(globalPL[name], playlist)
+        globalPL[name] = $.extend(globalPL[name], playlist); 
         alert( "Playlist added successfully!" );
     });
     
@@ -306,7 +306,7 @@ function scenario2Listeners(){
     // For saving song selection to an existing playlist
     $( "#s2ExistingSaveButton" ).click(function() {
         name = $('#u514').find("#scenario2PlaylistSelector").val()
-        globalPL[name].push.apply(globalPL[name], playlist)
+        globalPL[name] = $.extend(globalPL[name], playlist); 
         alert( "Playlist added successfully!" );
     });
     
@@ -329,7 +329,29 @@ function scenario2Listeners(){
 /       Scenario 3 Event Listeners
 */
 function scenario3Listeners(){
-     // Firing off a search from input
+
+    // If div is empty, hide
+    $('#useCaseThreeDiv').on("isnotempty", function() {
+        // Show the results
+        $('#useCaseThreeDiv').show()
+        // Show the 2 buttons
+        $('#buttonu552').show()
+        $('#buttonu583').show()
+        // Show the widget
+        $('#u258').show()
+
+    });
+    $('#useCaseThreeDiv').on("isempty", function() {
+        // Show the results
+        $('#useCaseThreeDiv').show()
+        // Hide the 2 buttons
+        $('#buttonu552').hide()
+        $('#buttonu583').hide()
+        // Hide the widget
+        $('#u258').hide()
+    });
+
+    // Firing off a search from input
     $( "#buttonu615" ).click(function() {        
         selectedDuration = currentDuration3
         minEnergy = currentMinEnergy / 100
@@ -341,46 +363,47 @@ function scenario3Listeners(){
         getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration)
     });
 
-    // *****Change IDs for the following*****
-
     // Changing the Play widget when clicking on song
-    // $('#useCaseThreeDiv').on("click", "li", function() {
-    //     console.log($(this).data("ref"))
-    //     $('#u256').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
-    // });
+    $('#useCaseThreeDiv').on("click", "li", function() {
+        console.log($(this).data("ref"))
+        $('#u258').html('<iframe src="https://embed.spotify.com/?uri=' + $(this).data("ref") + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
+    });
 
-    // // Removing song from playlist when clicking on remove
-    // $('#useCaseThreeDiv').on("click", "span", function() {
-    //     idx = $(this).parent().data("idx")
-    //     playlist.splice(idx, 1)
-    //     $(this).parent().parent().hide()
-    // });
+    // Removing song from playlist when clicking on remove
+    $('#useCaseThreeDiv').on("click", "span", function() {
+        spot = $(this).parent().data("ref")
+        delete playlist[spot]
+        $(this).parent().parent().hide()
+        if (Object.keys(playlist).length == 0) {
+            $('#useCaseThreeDiv').trigger( "isempty" );
+        }
+    });
 
-    // // Filling in first dropdown based on globalPL
-    // $('#buttonu497').on("click", function() {
-    //     $('#u514').find("#scenario2PlaylistSelector").html("")
-    //     for (pl in globalPL) {
-    //         $('#u514').find("#scenario2PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
-    //     }
-    // });
+    // Filling in first dropdown based on globalPL
+    $('#buttonu552').on("click", function() {
+        $('#u564').find("#scenario3PlaylistSelector").html("")
+        for (pl in globalPL) {
+            $('#u564').find("#scenario3PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+        }
+    });
    
-    // // For saving song selection to an existing playlist
-    // $( "#s2ExistingSaveButton" ).click(function() {
-    //     name = $('#u514').find("#scenario2PlaylistSelector").val()
-    //     globalPL[name].push.apply(globalPL[name], playlist)
-    //     alert( "Playlist added successfully!" );
-    // });
+    // For saving song selection to an existing playlist
+    $( "#s3ExistingSaveButton" ).click(function() {
+        name = $('#u564').find("#scenario3PlaylistSelector").val()
+        globalPL[name] = $.extend(globalPL[name], playlist);
+        alert( "Playlist added successfully!" );
+    });
     
-    // // For saving a new playlist to the local storage location of playlists
-    // $( "#s2NewPlaylistButton" ).click(function() {
-    //     name = $('#newPlayListInput1').val()
-    //     if (name in globalPL || name == '') {
-    //         alert('You must enter a (non-existing) name for your playlist')
-    //     } else {
-    //         globalPL[name] = playlist
-    //         alert('Playlist added successfully!')
-    //     }        
-    // });
+    // For saving a new playlist to the local storage location of playlists
+    $( "#s3NewPlaylistButton" ).click(function() {
+        name = $('#newPlayListInput3').val()
+        if (name in globalPL || name == '') {
+            alert('You must enter a (non-existing) name for your playlist')
+        } else {
+            globalPL[name] = playlist
+            alert('Playlist added successfully!')
+        }        
+    });
 
 };// END SCENARIO 3 LISTENERS
 
