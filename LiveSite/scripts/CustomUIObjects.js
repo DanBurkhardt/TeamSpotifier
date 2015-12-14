@@ -399,6 +399,7 @@ function scenario3Listeners(){
         minLiveness = currentMinLiveness / 100
         maxLiveness = currentMaxLiveness / 100
         getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration)
+        //getSearchResults(0, 1, 0, 1, 0, 1, selectedDuration)
     });
 
     // Changing the Play widget when clicking on song

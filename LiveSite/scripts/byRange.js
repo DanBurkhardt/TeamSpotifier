@@ -26,13 +26,14 @@ function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability
 	        if (Object.keys(playlist).length == 0) {
 				$('#useCaseThreeDiv').html("Sorry, there is no result for this search.");
 				$('#useCaseThreeDiv').trigger( "isempty" );
-			} else {        
+			} else {
 		        $('#useCaseThreeDiv').html("");
 				$('#useCaseThreeDiv').append("<ul>");
 				for (spot in playlist) {
 					$('#useCaseThreeDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
 				}
 				$('#useCaseThreeDiv').append("</ul>");
+				$('#useCaseThreeDiv').trigger( "isnotempty" );
 			}
      	}
     });     
