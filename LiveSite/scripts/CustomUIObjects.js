@@ -34,7 +34,7 @@ var currentMaxLiveness = "1";
 
 
 // globalPL
-var globalPL = {}
+globalPL = {}
 
 /*
 /       JQUERY Scenario 1
@@ -80,6 +80,8 @@ function durationSlider2Changed(event,ui){
     
 };
 
+
+
 /*
 /       JQUERY Scenario 3
 */
@@ -112,23 +114,59 @@ function durationSlider3Changed(event,ui){
 }
 
 
+
 /*
 /       Setup up event listeners for 
 /       the buttons of each scenario
 */
 $(document).ready(function(){
+
     // Hide all buttons and widgets
     hideAll();
+
+    // Resume state
+    resumeState();
+    
     // Activate listeners for scenario 1
     scenario1Listeners();
+    
     // Activate listeners for scenario 2
     scenario2Listeners();
+    
     // Activate listeners for scenario 3
     scenario3Listeners();
+    
     // Activate listeners for "Manage Playlists"
     manageListeners();
+
 });
 
+
+
+/*
+/       Setup up state saving when closing window
+*/
+$( window ).unload(function() {
+    saveState()
+});
+
+
+
+/*
+/       Start and resume state
+*/
+function saveState() {
+    localStorage['globalPL'] = JSON.stringify(globalPL)
+    return true
+}
+
+function resumeState() {
+    if (typeof localStorage['globalPL'] !== "undefined") {
+        console.log('ok' + localStorage['globalPL'])
+        globalPL = JSON.parse(localStorage['globalPL'])
+    }
+    return true
+}
 
 /*
 /       Hide all buttons and widgets on start
@@ -141,13 +179,13 @@ function hideAll() {
     $('#u258').hide()
     
     // Hide the 6 buttons
-    // 1
+    // scenario 1
     $('#buttonu212').hide()
     $('#buttonu228').hide()
-    // 2
+    // scenario 2
     $('#buttonu497').hide()
     $('#buttonu523').hide()
-    // 3
+    // scenario 3
     $('#buttonu552').hide()
     $('#buttonu583').hide()
 
