@@ -2,7 +2,7 @@ var api_key = 'WFHOQX2BKPZPVWRWC'
 
 
 function createPlaylistSongs(songName, artistName, duration) {
-	playlist = []
+	playlist = {}
 	req1 = {
 		api_key: api_key,
 		format: 'json',
@@ -49,19 +49,24 @@ function createPlaylistSongs(songName, artistName, duration) {
 					while (i < data['response']['songs'].length && d < duration*60) {
 						if (data['response']['songs'][i]['tracks'].length > 0) {
 							d += data['response']['songs'][i]['audio_summary']['duration']
-							playlist.push({
+							playlist[data['response']['songs'][i]['tracks'][0]['foreign_id']] = {
 								artist: data['response']['songs'][i]['artist_name'],
-								title: data['response']['songs'][i]['title'],
-								spotify: data['response']['songs'][i]['tracks'][0]['foreign_id']
-							})
+								title: data['response']['songs'][i]['title']
+							}
 						}
 						i++
 					}
-					$('#u250').html("<ul>");
-					for (var i=0; i<playlist.length; i++) {
-						$('#u250').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+					if (Object.keys(playlist).length == 0) {
+						$('#u250').html("Sorry, there is no result for this search.");
+						$('#u250').trigger( "isempty" );
+					} else {
+						$('#u250').html("<ul>");
+						for (spot in playlist) {
+							$('#u250').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+						}
+						$('#u250').append("</ul>");
+						$('#u250').trigger( "isnotempty" );
 					}
-					$('#u250').append("</ul>");
 				}
 			})
 		}

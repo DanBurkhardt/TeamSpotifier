@@ -89,7 +89,9 @@ function durationSlider3Changed(event,ui){
 /       the buttons of each scenario
 */
 $(document).ready(function(){
-    // Activate listners for scenario 1
+    // Hide all buttons and widgets
+    hideAll();
+    // Activate listeners for scenario 1
     scenario1Listeners();
     // Activate listeners for scenario 2
     scenario2Listeners();
@@ -100,15 +102,62 @@ $(document).ready(function(){
 });
 
 
+/*
+/       Hide all buttons and widgets on start
+*/
+function hideAll() {
+    
+    // Hide the 3 widgets
+    $('#u185').hide()
+    $('#u256').hide()
+    $('#u258').hide()
+    
+    // Hide the 6 buttons
+    // 1
+    $('#buttonu212').hide()
+    $('#buttonu228').hide()
+    // 2
+    $('#buttonu497').hide()
+    $('#buttonu523').hide()
+    // 3
+    $('#buttonu552').hide()
+    $('#buttonu583').hide()
+
+    // Hide the 3 search results
+    $('#u166').hide()
+    $('#u250').hide()
+    $('#useCaseThreeDiv').hide()
+
+}
+
+
 
 /*
 /       Scenario 1 Event Listeners
 */
 function scenario1Listeners(){
 
-    // If div is empty, hide: Play widget, Add button, Create button
-    // TODO
-    
+    // If div is empty, hide
+    $('#u166').on("isnotempty", function() {
+        // Show the results
+        $('#u166').show()
+        // Show the 2 buttons
+        $('#buttonu212').show()
+        $('#buttonu228').show()
+        // Show the widget
+        $('#u185').show()
+
+    });
+    $('#u166').on("isempty", function() {
+        // Show the results
+        $('#u166').show()
+        // Hide the 2 buttons
+        $('#buttonu212').hide()
+        $('#buttonu228').hide()
+        // Hide the widget
+        $('#u185').hide()
+    });
+
      // Firing off a search from input
     $( "#buttonu199" ).click(function() {
         artist = $('#bobInput').val()
@@ -124,9 +173,12 @@ function scenario1Listeners(){
 
     // Removing song from playlist when clicking on remove
     $('#u166').on("click", "span", function() {
-        idx = $(this).parent().data("idx")
-        playlist.splice(idx, 1)
+        spot = $(this).parent().data("ref")
+        delete playlist[spot]
         $(this).parent().parent().hide()
+        if (Object.keys(playlist).length == 0) {
+            $('#u166').trigger( "isempty" );
+        }
     });
 
     // Filling in first dropdown based on globalPL
@@ -169,6 +221,27 @@ function scenario1Listeners(){
 /       Scenario 2 Event Listeners
 */
 function scenario2Listeners(){
+
+    // If div is empty, hide
+    $('#u250').on("isnotempty", function() {
+        // Show the results
+        $('#u250').show()
+        // Show the 2 buttons
+        $('#buttonu497').show()
+        $('#buttonu523').show()
+        // Show the widget
+        $('#u256').show()
+
+    });
+    $('#u250').on("isempty", function() {
+        // Show the results
+        $('#u250').show()
+        // Hide the 2 buttons
+        $('#buttonu497').hide()
+        $('#buttonu523').hide()
+        // Hide the widget
+        $('#u256').hide()
+    });
     
      // Firing off a search from input
     $( "#buttonu359" ).click(function() {
@@ -186,9 +259,12 @@ function scenario2Listeners(){
 
     // Removing song from playlist when clicking on remove
     $('#u250').on("click", "span", function() {
-        idx = $(this).parent().data("idx")
-        playlist.splice(idx, 1)
+        spot = $(this).parent().data("ref")
+        delete playlist[spot]
         $(this).parent().parent().hide()
+        if (Object.keys(playlist).length == 0) {
+            $('#u250').trigger( "isempty" );
+        }
     });
 
     // Filling in first dropdown based on globalPL
@@ -208,7 +284,7 @@ function scenario2Listeners(){
     
     // For saving a new playlist to the local storage location of playlists
     $( "#s2NewPlaylistButton" ).click(function() {
-        name = $('#newPlayListInput1').val()
+        name = $('#newPlayListInput2').val()
         if (name in globalPL || name == '') {
             alert('You must enter a (non-existing) name for your playlist')
         } else {
@@ -245,8 +321,8 @@ function manageListeners(){
         playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
         $('#managePlaylistDiv').append("<ul>");
-        for (i=0; i<playlist.length; i++) {
-            $('#managePlaylistDiv').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+        for (spot in playlist) {
+            $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
         }
         $('#managePlaylistDiv').append("</ul>");
     })
@@ -256,16 +332,16 @@ function manageListeners(){
         playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
         $('#managePlaylistDiv').append("<ul>");
-        for (i=0; i<playlist.length; i++) {
-            $('#managePlaylistDiv').append("<div class='myresult'><li data-idx=" + i + " data-ref='" + playlist[i]['spotify'] + "'>" + playlist[i]['title'] + ", " + playlist[i]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+        for (spot in playlist) {
+            $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
         }
         $('#managePlaylistDiv').append("</ul>");
     })
 
     // Removing song from playlist when clicking on remove
     $('#managePlaylistDiv').on("click", "span", function() {
-        idx = $(this).parent().data("idx")
-        playlist.splice(idx, 1)
+        spot = $(this).parent().data("ref")
+        delete playlist[spot]
         $(this).parent().parent().hide()
     });
 
