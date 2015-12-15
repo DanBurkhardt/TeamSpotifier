@@ -2,7 +2,7 @@ var api_key = 'WFHOQX2BKPZPVWRWC'
 
 
 function createPlaylistSongs(songName, artistName, duration) {
-	playlist = {}
+	playlist2 = {}
 	req1 = {
 		api_key: api_key,
 		format: 'json',
@@ -49,20 +49,25 @@ function createPlaylistSongs(songName, artistName, duration) {
 					while (i < data['response']['songs'].length && d < duration*60) {
 						if (data['response']['songs'][i]['tracks'].length > 0) {
 							d += data['response']['songs'][i]['audio_summary']['duration']
-							playlist[data['response']['songs'][i]['tracks'][0]['foreign_id']] = {
+							playlist2[data['response']['songs'][i]['tracks'][0]['foreign_id']] = {
 								artist: data['response']['songs'][i]['artist_name'],
 								title: data['response']['songs'][i]['title']
 							}
 						}
 						i++
 					}
-					if (Object.keys(playlist).length == 0) {
+					if (Object.keys(playlist2).length == 0) {
 						$('#u250').html("Sorry, there is no result for this search.");
 						$('#u250').trigger( "isempty" );
 					} else {
+						widget2 = false
 						$('#u250').html("<ul>");
-						for (spot in playlist) {
-							$('#u250').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+						for (spot in playlist2) {
+							if (!widget2) {
+								$('#u256').html('<iframe src="https://embed.spotify.com/?uri=' + spot + '" width="250" height="380" frameborder="0" allowtransparency="true"></iframe>')
+								widget2 = true
+							}
+							$('#u250').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist2[spot]['title'] + ", " + playlist2[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
 						}
 						$('#u250').append("</ul>");
 						$('#u250').trigger( "isnotempty" );

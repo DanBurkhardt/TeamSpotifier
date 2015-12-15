@@ -200,6 +200,9 @@ function hideAll() {
     // Scenario 3 text
     $('#u621-4').hide()
 
+    // Clean all inputs
+    $('input').val('')
+
 }
 
 
@@ -248,31 +251,30 @@ function scenario1Listeners(){
     // Removing song from playlist when clicking on remove
     $('#u166').on("click", "span", function() {
         spot = $(this).parent().data("ref")
-        delete playlist[spot]
+        delete playlist1[spot]
         $(this).parent().parent().hide()
-        if (Object.keys(playlist).length == 0) {
+        if (Object.keys(playlist1).length == 0) {
             $('#u166').trigger( "isempty" );
         }
     });
 
     // Filling in first dropdown based on globalPL
-    $('#buttonu212').on("click", function() {
+    $('#u294').on("click", function() {
         $('#u322').find("#scenario1PlaylistSelector").html("")
         for (pl in globalPL) {
             $('#u322').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
         }
     });
 
-    // NOT WORKING DON'T KNOW WHY
-    $('#buttonu228').on("click", function() {
-        alert('ok')
+    // Blank the content of the input field
+    $('#u335').on("click", function() {
         $('#newPlayListInput1').val('');
     });
     
     // For saving song selection to an existing playlist
     $( "#s1ExistingSaveButton" ).click(function() {
         name = $('#u322').find("#scenario1PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist); 
+        globalPL[name] = $.extend(globalPL[name], playlist1);
         alert( "Playlist added successfully!" );
     });
     
@@ -282,7 +284,7 @@ function scenario1Listeners(){
         if (name in globalPL || name == '') {
             alert('You must enter a (non-existing) name for your playlist')
         } else {
-            globalPL[name] = playlist
+            globalPL[name] = playlist1
             alert('Playlist added successfully!')
         }
     });
@@ -336,25 +338,30 @@ function scenario2Listeners(){
     // Removing song from playlist when clicking on remove
     $('#u250').on("click", "span", function() {
         spot = $(this).parent().data("ref")
-        delete playlist[spot]
+        delete playlist2[spot]
         $(this).parent().parent().hide()
-        if (Object.keys(playlist).length == 0) {
+        if (Object.keys(playlist2).length == 0) {
             $('#u250').trigger( "isempty" );
         }
     });
 
     // Filling in first dropdown based on globalPL
-    $('#buttonu497').on("click", function() {
+    $('#u500').on("click", function() {
         $('#u514').find("#scenario2PlaylistSelector").html("")
         for (pl in globalPL) {
             $('#u514').find("#scenario2PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
         }
     });
+
+    // Blank the content of the input field
+    $('#u542').on("click", function() {
+        $('#newPlayListInput2').val('');
+    });
    
     // For saving song selection to an existing playlist
     $( "#s2ExistingSaveButton" ).click(function() {
         name = $('#u514').find("#scenario2PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist); 
+        globalPL[name] = $.extend(globalPL[name], playlist2);
         alert( "Playlist added successfully!" );
     });
     
@@ -364,7 +371,7 @@ function scenario2Listeners(){
         if (name in globalPL || name == '') {
             alert('You must enter a (non-existing) name for your playlist')
         } else {
-            globalPL[name] = playlist
+            globalPL[name] = playlist2
             alert('Playlist added successfully!')
         }        
     });
@@ -423,25 +430,30 @@ function scenario3Listeners(){
     // Removing song from playlist when clicking on remove
     $('#useCaseThreeDiv').on("click", "span", function() {
         spot = $(this).parent().data("ref")
-        delete playlist[spot]
+        delete playlist3[spot]
         $(this).parent().parent().hide()
-        if (Object.keys(playlist).length == 0) {
+        if (Object.keys(playlist3).length == 0) {
             $('#useCaseThreeDiv').trigger( "isempty" );
         }
     });
 
     // Filling in first dropdown based on globalPL
-    $('#buttonu673').on("click", function() {
+    $('#u555').on("click", function() {
         $('#u564').find("#scenario3PlaylistSelector").html("")
         for (pl in globalPL) {
             $('#u564').find("#scenario3PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
         }
     });
+
+    // Blank the content of the input field
+    $('#u542').on("click", function() {
+        $('#newPlayListInput2').val('');
+    });
    
     // For saving song selection to an existing playlist
     $( "#s3ExistingSaveButton" ).click(function() {
         name = $('#u564').find("#scenario3PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist);
+        globalPL[name] = $.extend(globalPL[name], playlist3);
         alert( "Playlist added successfully!" );
     });
     
@@ -451,7 +463,7 @@ function scenario3Listeners(){
         if (name in globalPL || name == '') {
             alert('You must enter a (non-existing) name for your playlist')
         } else {
-            globalPL[name] = playlist
+            globalPL[name] = playlist3
             alert('Playlist added successfully!')
         }        
     });
@@ -498,6 +510,30 @@ function manageListeners(){
         delete playlist[spot]
         $(this).parent().parent().hide()
     });
+
+    // Action area for deleting playlist
+    $('#u639').on("click", function() {
+        var retVal = confirm("Do you really want to delete this playlist?");
+        if( retVal == true ){
+            delete globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+            $('#u408').find('#scenario1PlaylistSelector').html("")
+            for (pl in globalPL) {
+                $('#u408').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+            }
+            // Display playlist songs on the right
+            playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+            $('#managePlaylistDiv').html("")
+            $('#managePlaylistDiv').append("<ul>");
+            for (spot in playlist) {
+                $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
+            }
+            $('#managePlaylistDiv').append("</ul>");
+            return true;
+        }
+        else{
+            return false;
+        }
+    })
     
     // Action area for playing the entire playlist
     $('#u657').on("click", function() {
