@@ -537,14 +537,59 @@ function manageListeners(){
     
     // Action area for playing the entire playlist
     $('#u657').on("click", function() {
-        alert("play whole playlist button clicked");
-        // TODO: Insert actions here for playing playlist
+        
+        // Get playlist name
+        playingPL = []
+        for (entry in playlist) {
+            playingPL.push(entry)
+        }
+        
+        // Play playlist
+        if ($('#playWholePlaylistButton').text() == 'play playlist') {
+            playASong(playingPL, 0)
+            $('#playWholePlaylistButton').text('stop playlist')
+
+        // Stop playlist
+        } else if ($('#playWholePlaylistButton').text() == 'stop playlist') {
+            audio.pause()
+            audio.currentTime = 0
+            $('#playWholePlaylistButton').text('play playlist')
+        }
+
     });
 
 };// END MANAGE PLAYLIST LISTENERS
 
-                  
-                  
+    
+
+/*
+/   Play a song
+*/              
+function playASong(playingPL, i) {
+
+    if (i < playingPL.length) {
+
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "https://api.spotify.com/v1/tracks/" + playingPL[i].split(':')[2],
+            success: function(data) {
+                console.log(data['preview_url'])
+                audio = new Audio(data['preview_url']);
+                audio.play()
+                audio.addEventListener('ended', function () {
+                    playASong(playingPL, i+1)
+                })
+            }
+        })
+
+    } else {
+
+        $('#playWholePlaylistButton').text('play playlist')
+
+    }
+
+}
                   
                   
                   
