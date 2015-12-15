@@ -1,5 +1,4 @@
 // JS FILE FOR JQUERY UI OBJECTS
-// Dan Burkhardt
 // Team Spotifier
 
 
@@ -43,14 +42,8 @@ function durationSlider1Changed(event, ui){
     
     //alert("Value changed to:"+ui.value);
     
-    // Add fuction for refreshing the table with results that match the duration
-    
-    // Replace the button text with the updated duration
-    // $('#u215-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u215-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
-    // Replace new playlist header
-    // $('#u324-4').replaceWith('<div class=\"clearfix colelem\" id=\"u324-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
-    // Replace add to existing header
-    // $('#u342-4').replaceWith('<div class=\"clearfix colelem\" id=\"u342-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>'); 
+    // Replace minute display
+    $('#u221-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u221-4\">'+ui.value+' mins</div>'); 
     
     // Assign new slider duration to global variable
     currentDuration1 = ui.value;
@@ -65,14 +58,8 @@ function durationSlider2Changed(event,ui){
     
     //alert("S2 value changed to:"+ui.value);
     
-    // Add fuction for refreshing the table with results that match the duration
-    
-    // Replace the button text with the updated duration
-    // $('#u501-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u501-4\"><!-- content --><p>add '+ui.value+' mins of songs to existing playlist</p></div>');
-    // Replace new playlist header
-    // $('#u533-4').replaceWith('<div class=\"clearfix colelem\" id=\"u533-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
-    // Replace add to existing header
-    // $('#u513-4').replaceWith('<div class=\"clearfix colelem\" id=\"u513-4\"><!-- content --><p>you selected '+ui.value+' mins of songs.</p></div>');
+    // Replace minute display
+    $('#u656-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u656-4\">'+ui.value+' mins</div>');
     
     
     // Assign the new duration to the global variable
@@ -89,6 +76,9 @@ function durationSlider2Changed(event,ui){
 function energySliderChanged(event,ui){
     currentMinEnergy = ui.values[0];
     currentMaxEnergy = ui.values[1];
+    // Replace energy level display
+    $('#u664-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u664-4\">'+ui.values[0]+' min, '+ui.values[1]+' max</div>');
+    
     // alert("Energy value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
@@ -96,6 +86,8 @@ function energySliderChanged(event,ui){
 function danceabilitySliderChanged(event,ui){
     currentMinDanceability = ui.values[0];
     currentMaxDanceability = ui.values[1];
+    // Replace dancability level display
+    $('#u666-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u666-4\">'+ui.values[0]+' min, '+ui.values[1]+' max</div>');
     // alert("Loudness value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
@@ -103,12 +95,18 @@ function danceabilitySliderChanged(event,ui){
 function livenessSliderChanged(event,ui){
     currentMinLiveness = ui.values[0];
     currentMaxLiveness = ui.values[1];
+    
+    $('#u667-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u667-4\">'+ui.values[0]+' min, '+ui.values[1]+' max</div>');
+    
     // alert("Tempo value changed, low value: "+ui.values[0] +" high value: " +ui.values[1]);   
 };
 
 // Duration slider without range
 function durationSlider3Changed(event,ui){
-
+    
+    // Replace minute display
+    $('#u663-4').replaceWith('<div class=\"clearfix grpelem\" id=\"u663-4\">'+ui.value+' mins</div>');
+    
     // Assign the new duration to the global variable
     currentDuration3 = ui.value;
 }
@@ -183,16 +181,24 @@ function hideAll() {
     $('#buttonu212').hide()
     $('#buttonu228').hide()
     // scenario 2
-    $('#buttonu497').hide()
-    $('#buttonu523').hide()
+    $('#buttonu651').hide()
+    $('#buttonu646').hide()
     // scenario 3
-    $('#buttonu552').hide()
-    $('#buttonu583').hide()
+    $('#buttonu673').hide()
+    $('#buttonu678').hide()
 
     // Hide the 3 search results
     $('#u166').hide()
     $('#u250').hide()
     $('#useCaseThreeDiv').hide()
+    
+    // Hide the "search results" text boxes
+    // Scenario 1 text
+    $('#u184-4').hide()
+    // Scenario 2 text
+    $('#u355-4').hide()
+    // Scenario 3 text
+    $('#u621-4').hide()
 
 }
 
@@ -205,8 +211,9 @@ function scenario1Listeners(){
 
     // If div is empty, hide
     $('#u166').on("isnotempty", function() {
-        // Show the results
+        // Show the results and results text
         $('#u166').show()
+        $('#u184-4').show()
         // Show the 2 buttons
         $('#buttonu212').show()
         $('#buttonu228').show()
@@ -215,8 +222,9 @@ function scenario1Listeners(){
 
     });
     $('#u166').on("isempty", function() {
-        // Show the results
+        // Show the results and results text
         $('#u166').show()
+        $('#u184-4').show()
         // Hide the 2 buttons
         $('#buttonu212').hide()
         $('#buttonu228').hide()
@@ -292,9 +300,10 @@ function scenario2Listeners(){
     $('#u250').on("isnotempty", function() {
         // Show the results
         $('#u250').show()
+        $('#u355-4').show()
         // Show the 2 buttons
-        $('#buttonu497').show()
-        $('#buttonu523').show()
+        $('#buttonu651').show()
+        $('#buttonu646').show()
         // Show the widget
         $('#u256').show()
 
@@ -302,9 +311,10 @@ function scenario2Listeners(){
     $('#u250').on("isempty", function() {
         // Show the results
         $('#u250').show()
+        $('#u355-4').show()
         // Hide the 2 buttons
-        $('#buttonu497').hide()
-        $('#buttonu523').hide()
+        $('#buttonu651').hide()
+        $('#buttonu646').hide()
         // Hide the widget
         $('#u256').hide()
     });
@@ -372,9 +382,10 @@ function scenario3Listeners(){
     $('#useCaseThreeDiv').on("isnotempty", function() {
         // Show the results
         $('#useCaseThreeDiv').show()
+        $('#u621-4').show()
         // Show the 2 buttons
-        $('#buttonu552').show()
-        $('#buttonu583').show()
+        $('#buttonu673').show()
+        $('#buttonu678').show()
         // Show the widget
         $('#u258').show()
 
@@ -382,9 +393,10 @@ function scenario3Listeners(){
     $('#useCaseThreeDiv').on("isempty", function() {
         // Show the results
         $('#useCaseThreeDiv').show()
+        $('#u621-4').show()
         // Hide the 2 buttons
-        $('#buttonu552').hide()
-        $('#buttonu583').hide()
+        $('#buttonu673').hide()
+        $('#buttonu678').hide()
         // Hide the widget
         $('#u258').hide()
     });
@@ -419,7 +431,7 @@ function scenario3Listeners(){
     });
 
     // Filling in first dropdown based on globalPL
-    $('#buttonu552').on("click", function() {
+    $('#buttonu673').on("click", function() {
         $('#u564').find("#scenario3PlaylistSelector").html("")
         for (pl in globalPL) {
             $('#u564').find("#scenario3PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
@@ -486,5 +498,98 @@ function manageListeners(){
         delete playlist[spot]
         $(this).parent().parent().hide()
     });
+    
+    // Action area for playing the entire playlist
+    $('#u657').on("click", function() {
+        alert("play whole playlist button clicked");
+        // TODO: Insert actions here for playing playlist
+    });
 
 };// END MANAGE PLAYLIST LISTENERS
+
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                                 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                                 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                                 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
