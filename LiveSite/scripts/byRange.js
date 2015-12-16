@@ -6,6 +6,8 @@ function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability
 	$.ajax({
       	url:url_string,    
       	success: function(json){
+            // Hide loading indicator
+            hideLoadingIndicator();
 	        len=json.response.songs.length; 
 	        d=0;
 	        for(var i = 0; i<len; i++) {
@@ -21,6 +23,7 @@ function getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability
 	        	}
 	        	catch(err){
 	        		console.log("Error message = " + err.message)
+                    
 	        	}
 	        }
 	        if (Object.keys(playlist3).length == 0) {

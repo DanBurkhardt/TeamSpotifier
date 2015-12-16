@@ -329,7 +329,7 @@ function scenario2Listeners(){
         song = $('#songInput').val()
         duration = currentDuration2
         createPlaylistSongs(song, artist, duration)
-        showLoadingIndicator();
+        s2ShowLoadingIndicator();
     });
 
     // Changing the Play widget when clicking on song
@@ -422,6 +422,7 @@ function scenario3Listeners(){
         maxLiveness = currentMaxLiveness / 100
         getSearchResults(minEnergy, maxEnergy, minDanceability, maxDanceability, minLiveness, maxLiveness, selectedDuration)
         //getSearchResults(0, 1, 0, 1, 0, 1, selectedDuration)
+        s3ShowLoadingIndicator();
     });
 
     // Changing the Play widget when clicking on song
