@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450285369005">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450292105707">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -28,9 +28,7 @@
     <file name="search14x14_2x.png" crc="140752713" seo="true" ref="index"/>
     <file name="search15x15.png" crc="289130739" seo="true" ref="index"/>
     <file name="search15x15_2x.png" crc="4050613220" seo="true" ref="index"/>
-    <file name="singer.jpg" crc="3778332063" seo="true" ref="index"/>
-    <file name="singer_2x.jpg" crc="4217574225" seo="true" ref="index"/>
-    <file name="disc.png" crc="242029969" seo="true" ref="index"/>
+    <file name="disc.png" crc="79572876" seo="true" ref="index"/>
     <file name="disc_2x.png" crc="535188388" seo="true" ref="index"/>
     <file name="myplaylists.png" crc="465571896" ref="index"/>
     <file name="myplaylists_2x.png" crc="5603163" ref="index"/>
@@ -38,17 +36,21 @@
     <file name="myplaylistsclose_2x.png" crc="417182847" ref="index"/>
     <file name="wavewht.png" crc="4068172996" seo="true" ref="index"/>
     <file name="wavewht_2x.png" crc="454423294" seo="true" ref="index"/>
-    <file name="singerwht.jpg" crc="3804466157" seo="true" ref="index"/>
-    <file name="singerwht_2x.jpg" crc="4234774038" seo="true" ref="index"/>
     <file name="discblk.png" crc="3892969385" seo="true" ref="index"/>
     <file name="discblk_2x.png" crc="4202375322" seo="true" ref="index"/>
     <file name="wave.png" crc="13090653" seo="true" ref="index"/>
     <file name="wave_2x.png" crc="69424416" seo="true" ref="index"/>
+    <file name="singerwhtsolid.png" crc="362838870" seo="true" ref="index"/>
+    <file name="singerwhtsolid_2x.png" crc="4003020524" seo="true" ref="index"/>
+    <file name="singerblksolid.jpg" crc="515567901" seo="true" ref="index"/>
+    <file name="singerblksolid_2x.jpg" crc="3941432374" seo="true" ref="index"/>
+    <file name="playingplayist.png" crc="507002238" seo="true" ref="index"/>
+    <file name="playingplayist_2x.png" crc="4119009432" seo="true" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="4253265949" ref="index"/>
-    <file name="iefonts_index.css" crc="3847144646" ref="index"/>
+    <file name="index.css" crc="3949540679" ref="index"/>
+    <file name="iefonts_index.css" crc="3883551929" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -62,5 +64,5 @@
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
     <file name="musewpdisclosure.js" crc="404074387" ref="index"/>
   </folder>
-  <file name="index.html" crc="499441009" seo="true" mt="1450285363885" redirect="true"/>
+  <file name="index.html" crc="424579451" seo="true" mt="1450292101385" redirect="true"/>
 </manifest>

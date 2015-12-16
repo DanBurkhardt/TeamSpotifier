@@ -244,6 +244,7 @@ function scenario1Listeners(){
         artist = $('#bobInput').val()
         duration = currentDuration1
         createPlaylistArtist(artist, duration)
+        s1ShowLoadingIndicator();
     });
     
     // Changing the Play widget when clicking on song
@@ -292,6 +293,7 @@ function scenario1Listeners(){
             alert('Playlist added successfully!')
         }
     });
+
     
 };// END SCENARIO 1 LISTENERS
 
@@ -331,6 +333,7 @@ function scenario2Listeners(){
         song = $('#songInput').val()
         duration = currentDuration2
         createPlaylistSongs(song, artist, duration)
+        showLoadingIndicator();
     });
 
     // Changing the Play widget when clicking on song
@@ -631,7 +634,75 @@ function playASong(playingPL, i) {
     }
 
 }
-                  
+
+
+
+/*
+/  Loading Indicator
+*/ 
+
+// Loading Indicator options
+var opts = {
+            lines: 10, // The number of lines to draw
+            length: 7, // The length of each line
+            width: 4, // The line thickness
+            radius: 10, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: '#000', // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: 'spinner', // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: 25, // Top position relative to parent in px
+            left: 25 // Left position relative to parent in px
+        };
+
+// Global var for spinner
+var spinner;
+// Global var for spinner targets
+var spinnerTarget1;
+var spinnerTarget2;
+var spinnerTarget3;
+
+// Setup spinner target on first load
+$(document).ready(function(){
+    spinnerTarget1 = document.getElementById('scenario1Indicator');
+    spinnerTarget2 = document.getElementById('scenario2Indicator');
+    spinnerTarget3 = document.getElementById('scenario3Indicator');
+    
+    // testing items
+    //spinner = new Spinner(opts).spin(spinnerTarget1);
+    /*
+    // Test button listener
+    $( "#buttonu943" ).click(function() {
+       hideLoadingIndicator();
+    });*/
+});
+
+// Get loader div and insert spinner
+function s1ShowLoadingIndicator(){
+    spinner = new Spinner(opts).spin(spinnerTarget1);
+    console.log('show s1 loading indicator');
+};
+
+function s2ShowLoadingIndicator(){
+    spinner = new Spinner(opts).spin(spinnerTarget2);
+    console.log('show s2 loading indicator');
+};
+
+function s3ShowLoadingIndicator(){
+    spinner = new Spinner(opts).spin(spinnerTarget3);
+    console.log('show s2 loading indicator');
+};
+
+// Get loader div and stop it
+function hideLoadingIndicator(){
+    spinner.stop();
+    console.log('hide loading indicator');
+};
                   
                   
                   

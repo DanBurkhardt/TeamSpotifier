@@ -59,10 +59,14 @@ function createPlaylistArtist(artistName, duration) {
 									$('#u166').trigger( "isnotempty" );
 								}
 							}
+                            // Hide the loader
+                            hideLoadingIndicator();
 						}
 					})
 				}
 				catch(err) {
+                    // Hide the loader
+                    hideLoadingIndicator();
 					console.log(err)
 					$('#u166').html("Sorry, there is no result for this search.");
 					$('#u166').trigger( "isempty" );
