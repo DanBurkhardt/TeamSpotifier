@@ -513,22 +513,18 @@ function manageListeners(){
         // Display playlist songs on the right
         playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
-        $('#managePlaylistDiv').append("<ul>");
         for (spot in playlist) {
             $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
         }
-        $('#managePlaylistDiv').append("</ul>");
     })
 
     // Display playlist songs on change
     $('#u855').on("change", "#scenario1PlaylistSelector", function() {
         playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
-        $('#managePlaylistDiv').append("<ul>");
         for (spot in playlist) {
             $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
         }
-        $('#managePlaylistDiv').append("</ul>");
     })
 
     // Removing song from playlist when clicking on remove
@@ -552,11 +548,9 @@ function manageListeners(){
             // Display playlist songs on the right
             playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
             $('#managePlaylistDiv').html("")
-            $('#managePlaylistDiv').append("<ul>");
             for (spot in playlist) {
                 $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
             }
-            $('#managePlaylistDiv').append("</ul>");
             // Stop playing songs
             audio.pause()
             audio.currentTime = 0
@@ -643,10 +637,12 @@ function playASong(playingPL, i) {
                     dataType: "json",
                     url: "http://developer.echonest.com/api/v4/artist/biographies?" + $.param(req),
                     success: function(data) {
-                        console.log(data['response']['biographies'][0]['text'].split('.')[0])
-                        $('#u842-4').text('"' + data['response']['biographies'][0]['text'].split('.')[0] + '"')
+                        try {
+                            $('#u842-4').text(data['response']['biographies'][0]['text'].split('.')[0])
+                        } catch(err) {
+                            $('#u842-4').text("No information to display, sorry.")
+                        }                        
                         $('#u841-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
-                        console.log()
                     }
                 })
                 // Update audio
@@ -655,6 +651,9 @@ function playASong(playingPL, i) {
                 audio.addEventListener('ended', function () {
                     playASong(playingPL, i+1)
                 })
+                // Highlight song
+                $('#managePlaylistDiv div').eq(i-1).css("background-color", "")
+                $('#managePlaylistDiv div').eq(i).css("background-color", "#0CF5E4")
             }
         })
 
