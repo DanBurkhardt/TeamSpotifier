@@ -1,11 +1,9 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450282226608">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450284106290">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
     <file name="downarrow.png" crc="3865413860" seo="true" ref="index"/>
     <file name="downarrow_2x.png" crc="329083818" seo="true" ref="index"/>
-    <file name="avaone.jpg" crc="141801685" seo="true" ref="index"/>
-    <file name="avaone_2x.jpg" crc="279327328" seo="true" ref="index"/>
     <file name="search.png" crc="535171820" seo="true" ref="index"/>
     <file name="search_2x.png" crc="4020154971" seo="true" ref="index"/>
     <file name="add.png" crc="4087481514" seo="true" ref="index"/>
@@ -24,8 +22,6 @@
     <file name="u436_2x.png" crc="4169463297" ref="index"/>
     <file name="u531.png" crc="4183019336" ref="index"/>
     <file name="u531_2x.png" crc="58712043" ref="index"/>
-    <file name="avaone87x87.jpg" crc="4220887699" seo="true" ref="index"/>
-    <file name="avaone87x87_2x.jpg" crc="8981993" seo="true" ref="index"/>
     <file name="u600.png" crc="4183019336" ref="index"/>
     <file name="u600_2x.png" crc="58712043" ref="index"/>
     <file name="search14x14.png" crc="3977004863" seo="true" ref="index"/>
@@ -42,11 +38,17 @@
     <file name="myplaylistsclose_2x.png" crc="417182847" ref="index"/>
     <file name="wavewht.png" crc="4068172996" seo="true" ref="index"/>
     <file name="wavewht_2x.png" crc="454423294" seo="true" ref="index"/>
+    <file name="singerwht.jpg" crc="3804466157" seo="true" ref="index"/>
+    <file name="singerwht_2x.jpg" crc="4234774038" seo="true" ref="index"/>
+    <file name="discblk.png" crc="3892969385" seo="true" ref="index"/>
+    <file name="discblk_2x.png" crc="4202375322" seo="true" ref="index"/>
+    <file name="wave.png" crc="13090653" seo="true" ref="index"/>
+    <file name="wave_2x.png" crc="69424416" seo="true" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="364744874" ref="index"/>
-    <file name="iefonts_index.css" crc="103121418" ref="index"/>
+    <file name="index.css" crc="4004932946" ref="index"/>
+    <file name="iefonts_index.css" crc="3847144646" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -60,5 +62,5 @@
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
     <file name="musewpdisclosure.js" crc="404074387" ref="index"/>
   </folder>
-  <file name="index.html" crc="419999587" seo="true" mt="1450282218601" redirect="true"/>
+  <file name="index.html" crc="308434041" seo="true" mt="1450283938119" redirect="true"/>
 </manifest>
