@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450159151185">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450220002831">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -34,11 +34,13 @@
     <file name="search14x14_2x.png" crc="140752713" seo="true" ref="index"/>
     <file name="search15x15.png" crc="289130739" seo="true" ref="index"/>
     <file name="search15x15_2x.png" crc="4050613220" seo="true" ref="index"/>
+    <file name="singer.jpg" crc="3778332063" seo="true" ref="index"/>
+    <file name="singer_2x.jpg" crc="4217574225" seo="true" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="34245374" ref="index"/>
-    <file name="iefonts_index.css" crc="3859963072" ref="index"/>
+    <file name="index.css" crc="409599335" ref="index"/>
+    <file name="iefonts_index.css" crc="484043215" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -51,5 +53,5 @@
     <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
   </folder>
-  <file name="index.html" crc="344623217" seo="true" mt="1450159147718" redirect="true"/>
+  <file name="index.html" crc="34704063" seo="true" mt="1450219991294" redirect="true"/>
 </manifest>

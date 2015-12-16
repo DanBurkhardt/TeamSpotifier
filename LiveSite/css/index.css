@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #000002;
-	background-color: #0A8AFE;
+	color: #000018;
+	background-color: #69FD67;
 }
 
 .html
@@ -30,14 +30,14 @@
 
 #u124
 {
-	z-index: 337;
+	z-index: 331;
 	height: 111px;
 	background-color: #000000;
 }
 
 #u124-bw
 {
-	z-index: 337;
+	z-index: 331;
 	position: fixed;
 	left: 0px;
 	right: 0px;
@@ -51,7 +51,7 @@
 
 #u149
 {
-	z-index: 342;
+	z-index: 336;
 	width: 48px;
 	background-color: transparent;
 	position: fixed;
@@ -61,13 +61,13 @@
 
 #u132-4
 {
-	z-index: 338;
+	z-index: 332;
 	width: 274px;
 	min-height: 25px;
 	background-color: transparent;
 	color: #FFFFFF;
-	font-size: 31px;
 	line-height: 37px;
+	font-size: 31px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: fixed;
@@ -75,33 +75,51 @@
 	left: 79px;
 }
 
+#u743
+{
+	z-index: 362;
+	width: 31px;
+	background-color: transparent;
+	margin-left: 466px;
+	margin-top: 2px;
+	position: relative;
+}
+
+#pu158-4
+{
+	width: 0.01px;
+	padding-bottom: 27px;
+	margin-left: 502px;
+	margin-top: -27px;
+}
+
 #u158-4
 {
-	z-index: 348;
-	width: 121px;
+	z-index: 342;
+	width: 76px;
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
-	text-align: center;
-	font-size: 19px;
 	line-height: 23px;
+	text-align: left;
+	font-size: 19px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
-	top: 28px;
-	left: 480px;
+	top: 24px;
+	left: 502px;
 }
 
 #u159-4
 {
-	z-index: 352;
+	z-index: 346;
 	width: 117px;
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
+	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
-	line-height: 23px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -111,14 +129,14 @@
 
 #u160-4
 {
-	z-index: 356;
+	z-index: 350;
 	width: 109px;
 	min-height: 16px;
 	background-color: transparent;
 	color: #FFFFFF;
+	line-height: 23px;
 	text-align: center;
 	font-size: 19px;
-	line-height: 23px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -128,14 +146,14 @@
 
 #u156-4
 {
-	z-index: 344;
+	z-index: 338;
 	width: 112px;
 	min-height: 27px;
 	background-color: transparent;
 	color: #FFFFFF;
+	line-height: 12px;
 	text-align: left;
 	font-size: 10px;
-	line-height: 12px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: fixed;
@@ -145,7 +163,7 @@
 
 #u161
 {
-	z-index: 360;
+	z-index: 354;
 	width: 43px;
 	height: 2px;
 	background-color: #FFFFFF;
@@ -156,7 +174,7 @@
 
 #u162
 {
-	z-index: 361;
+	z-index: 355;
 	width: 43px;
 	height: 2px;
 	background-color: #FFFFFF;
@@ -167,7 +185,7 @@
 
 #u163
 {
-	z-index: 362;
+	z-index: 356;
 	width: 43px;
 	height: 2px;
 	background-color: #FFFFFF;
@@ -178,14 +196,14 @@
 
 #u114
 {
-	z-index: 369;
+	z-index: 365;
 	width: 50px;
 	min-height: 25px;
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
 	left: -179px;
-	margin-top: 67px;
+	margin-top: 34px;
 	position: relative;
 }
 
@@ -198,7 +216,7 @@
 
 #u75
 {
-	z-index: 368;
+	z-index: 364;
 	width: 60px;
 	min-height: 64px;
 	border-style: none;
@@ -210,13 +228,13 @@
 
 #u82-4
 {
-	z-index: 322;
+	z-index: 316;
 	width: 248px;
 	min-height: 41px;
 	background-color: transparent;
+	line-height: 48px;
 	text-align: center;
 	font-size: 40px;
-	line-height: 48px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -227,7 +245,7 @@
 
 #u170
 {
-	z-index: 330;
+	z-index: 324;
 	width: 170px;
 	height: 1px;
 	background-color: #7F7F7F;
@@ -237,13 +255,13 @@
 
 #u168-4
 {
-	z-index: 326;
+	z-index: 320;
 	width: 351px;
 	min-height: 63px;
 	background-color: transparent;
+	line-height: 24px;
 	text-align: center;
 	font-size: 20px;
-	line-height: 24px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-left: 305px;
@@ -284,13 +302,13 @@
 
 #u171-4
 {
-	z-index: 331;
+	z-index: 325;
 	width: 226px;
 	min-height: 40px;
 	background-color: transparent;
+	line-height: 24px;
 	text-align: center;
 	font-size: 20px;
-	line-height: 24px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -301,7 +319,7 @@
 
 #u172
 {
-	z-index: 335;
+	z-index: 329;
 	width: 39px;
 	background-color: transparent;
 	margin-left: 461px;
@@ -315,9 +333,24 @@
 	position: relative;
 }
 
+#u81-4
+{
+	z-index: 209;
+	width: 440px;
+	min-height: 32px;
+	background-color: transparent;
+	line-height: 36px;
+	font-size: 30px;
+	font-family: asap, sans-serif;
+	font-weight: 700;
+	margin-left: 85px;
+	margin-top: 142px;
+	position: relative;
+}
+
 #pamphletu389
 {
-	z-index: 291;
+	z-index: 285;
 	width: 0.01px;
 	height: 76px;
 	padding-bottom: 3px;
@@ -328,7 +361,7 @@
 
 #u390
 {
-	z-index: 292;
+	z-index: 286;
 	width: 59px;
 	position: relative;
 	margin-right: -10000px;
@@ -347,7 +380,7 @@
 
 #u380
 {
-	z-index: 298;
+	z-index: 292;
 	width: 59px;
 	background-color: transparent;
 	opacity: 0;
@@ -372,16 +405,16 @@
 
 #u379-4
 {
-	z-index: 294;
+	z-index: 288;
 	width: 59px;
 	min-height: 17px;
 	background-color: transparent;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
+	line-height: 8px;
 	text-align: center;
 	font-size: 7px;
-	line-height: 8px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -428,12 +461,12 @@
 
 #u396popup
 {
-	z-index: 300;
+	z-index: 294;
 }
 
 #u397
 {
-	z-index: 301;
+	z-index: 295;
 	width: 641px;
 	height: 441px;
 	border-width: 1px;
@@ -455,13 +488,13 @@
 
 #u407-4
 {
-	z-index: 302;
+	z-index: 296;
 	width: 338px;
 	min-height: 76px;
 	background-color: transparent;
+	line-height: 43px;
 	text-align: center;
 	font-size: 36px;
-	line-height: 43px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -471,7 +504,7 @@
 
 #u413
 {
-	z-index: 312;
+	z-index: 306;
 	width: 43px;
 	background-color: transparent;
 	position: relative;
@@ -481,7 +514,7 @@
 
 #u419-4
 {
-	z-index: 314;
+	z-index: 308;
 	width: 336px;
 	min-height: 22px;
 	background-color: transparent;
@@ -509,7 +542,7 @@
 
 #u410-4
 {
-	z-index: 307;
+	z-index: 301;
 	width: 141px;
 	min-height: 25px;
 	background-color: transparent;
@@ -521,7 +554,7 @@
 
 #u408
 {
-	z-index: 306;
+	z-index: 300;
 	width: 150px;
 	min-height: 100px;
 	border-style: none;
@@ -534,7 +567,7 @@
 
 #u411
 {
-	z-index: 311;
+	z-index: 305;
 	width: 454px;
 	min-height: 196px;
 	border-style: none;
@@ -555,7 +588,7 @@
 
 #u635
 {
-	z-index: 318;
+	z-index: 312;
 	width: 200px;
 	min-height: 61px;
 	border-style: none;
@@ -569,7 +602,7 @@
 
 #u637
 {
-	z-index: 319;
+	z-index: 313;
 	width: 95px;
 	min-height: 30px;
 	border-style: none;
@@ -582,7 +615,7 @@
 
 #u639
 {
-	z-index: 320;
+	z-index: 314;
 	width: 150px;
 	min-height: 30px;
 	border-style: none;
@@ -595,7 +628,7 @@
 
 #u657
 {
-	z-index: 321;
+	z-index: 315;
 	width: 100px;
 	min-height: 30px;
 	border-style: none;
@@ -610,64 +643,16 @@
 	cursor: pointer;
 }
 
-#pu81-4
-{
-	width: 0.01px;
-	margin-left: 82px;
-	margin-top: 196px;
-}
-
-#u81-4
-{
-	z-index: 209;
-	width: 440px;
-	min-height: 32px;
-	background-color: transparent;
-	font-size: 30px;
-	line-height: 36px;
-	font-family: asap, sans-serif;
-	font-weight: 700;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 88px;
-}
-
-#u167-4
-{
-	z-index: 213;
-	width: 592px;
-	min-height: 120px;
-	background-color: transparent;
-	text-align: left;
-	font-size: 16px;
-	line-height: 19px;
-	font-family: asap, sans-serif;
-	font-weight: 400;
-	position: relative;
-	margin-right: -10000px;
-	left: 142px;
-}
-
-#u178
-{
-	z-index: 217;
-	width: 120px;
-	background-color: transparent;
-	border-radius: 100px;
-	position: relative;
-	margin-right: -10000px;
-}
-
 #pu190
 {
 	width: 0.01px;
-	margin-left: 82px;
-	margin-top: 45px;
+	margin-left: 86px;
+	margin-top: 63px;
 }
 
 #u190
 {
-	z-index: 223;
+	z-index: 217;
 	width: 302px;
 	min-height: 29px;
 	border-style: none;
@@ -680,7 +665,7 @@
 
 #u241
 {
-	z-index: 285;
+	z-index: 279;
 	vertical-align: top;
 	width: 302px;
 	height: 2px;
@@ -699,7 +684,7 @@
 #ppu220-4
 {
 	width: 0.01px;
-	margin-left: 82px;
+	margin-left: 86px;
 	margin-top: -7px;
 }
 
@@ -712,7 +697,7 @@
 
 #u220-4
 {
-	z-index: 364;
+	z-index: 358;
 	width: 301px;
 	min-height: 20px;
 	background-color: transparent;
@@ -724,7 +709,7 @@
 
 #u216
 {
-	z-index: 363;
+	z-index: 357;
 	width: 302px;
 	min-height: 19px;
 	border-style: none;
@@ -735,13 +720,13 @@
 
 #u221-4
 {
-	z-index: 287;
+	z-index: 281;
 	width: 142px;
 	min-height: 26px;
 	background-color: transparent;
+	line-height: 14px;
 	text-align: left;
 	font-size: 12px;
-	line-height: 14px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -749,7 +734,7 @@
 
 #buttonu199
 {
-	z-index: 224;
+	z-index: 218;
 	width: 70px;
 	border-width: 1px;
 	border-style: solid;
@@ -778,13 +763,13 @@
 
 #u243-4
 {
-	z-index: 227;
+	z-index: 221;
 	width: 39px;
 	min-height: 15px;
 	background-color: transparent;
+	line-height: 13px;
 	text-align: right;
 	font-size: 11px;
-	line-height: 13px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -804,7 +789,7 @@
 
 #u203
 {
-	z-index: 225;
+	z-index: 219;
 	width: 14px;
 	background-color: transparent;
 	position: relative;
@@ -829,7 +814,7 @@
 
 #u184-4
 {
-	z-index: 219;
+	z-index: 213;
 	width: 105px;
 	min-height: 22px;
 	background-color: transparent;
@@ -842,7 +827,7 @@
 
 #u353
 {
-	z-index: 286;
+	z-index: 280;
 	width: 504px;
 	min-height: 81px;
 	border-style: none;
@@ -855,7 +840,7 @@
 
 #pamphletu291
 {
-	z-index: 238;
+	z-index: 232;
 	width: 0.01px;
 	height: 53px;
 	margin-left: 27px;
@@ -865,7 +850,7 @@
 
 #u292
 {
-	z-index: 239;
+	z-index: 233;
 	width: 205px;
 	position: relative;
 	margin-right: -10000px;
@@ -913,12 +898,12 @@
 
 #u298popup
 {
-	z-index: 241;
+	z-index: 235;
 }
 
 #u303
 {
-	z-index: 242;
+	z-index: 236;
 	width: 288px;
 	height: 313px;
 	border-style: none;
@@ -941,13 +926,13 @@
 
 #u328-4
 {
-	z-index: 254;
+	z-index: 248;
 	width: 187px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -956,7 +941,7 @@
 
 #u325
 {
-	z-index: 252;
+	z-index: 246;
 	width: 20px;
 	background-color: transparent;
 	position: relative;
@@ -967,13 +952,13 @@
 
 #u321-6
 {
-	z-index: 243;
+	z-index: 237;
 	width: 288px;
 	min-height: 46px;
 	background-color: transparent;
+	line-height: 19px;
 	text-align: center;
 	font-size: 16px;
-	line-height: 19px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-top: 38px;
@@ -989,7 +974,7 @@
 
 #u322
 {
-	z-index: 249;
+	z-index: 243;
 	width: 200px;
 	min-height: 181px;
 	border-style: none;
@@ -1002,7 +987,7 @@
 
 #u319
 {
-	z-index: 250;
+	z-index: 244;
 	width: 95px;
 	min-height: 29px;
 	border-style: none;
@@ -1015,7 +1000,7 @@
 
 #u626
 {
-	z-index: 251;
+	z-index: 245;
 	width: 95px;
 	min-height: 29px;
 	border-style: none;
@@ -1036,7 +1021,7 @@
 
 #buttonu212
 {
-	z-index: 231;
+	z-index: 225;
 	width: 205px;
 	border-color: #787878;
 	background-color: #CACACA;
@@ -1054,7 +1039,7 @@
 
 #u206
 {
-	z-index: 232;
+	z-index: 226;
 	width: 19px;
 	background-color: transparent;
 	position: relative;
@@ -1072,13 +1057,13 @@
 
 #u625-4
 {
-	z-index: 234;
+	z-index: 228;
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -1098,7 +1083,7 @@
 
 #pamphletu329
 {
-	z-index: 265;
+	z-index: 259;
 	width: 0.01px;
 	height: 53px;
 	position: relative;
@@ -1108,7 +1093,7 @@
 
 #u334
 {
-	z-index: 266;
+	z-index: 260;
 	width: 205px;
 	position: relative;
 	margin-right: -10000px;
@@ -1156,12 +1141,12 @@
 
 #u336popup
 {
-	z-index: 268;
+	z-index: 262;
 }
 
 #u337
 {
-	z-index: 269;
+	z-index: 263;
 	width: 316px;
 	height: 323px;
 	border-style: none;
@@ -1175,7 +1160,7 @@
 
 #u693
 {
-	z-index: 270;
+	z-index: 264;
 	width: 297px;
 	min-height: 296px;
 	border-style: none;
@@ -1189,7 +1174,7 @@
 
 #u350
 {
-	z-index: 271;
+	z-index: 265;
 	width: 155px;
 	min-height: 141px;
 	border-style: none;
@@ -1203,7 +1188,7 @@
 
 #u343
 {
-	z-index: 272;
+	z-index: 266;
 	width: 95px;
 	min-height: 30px;
 	border-style: none;
@@ -1217,7 +1202,7 @@
 
 #u691
 {
-	z-index: 273;
+	z-index: 267;
 	width: 95px;
 	min-height: 30px;
 	border-style: none;
@@ -1231,7 +1216,7 @@
 
 #u339-4
 {
-	z-index: 274;
+	z-index: 268;
 	width: 288px;
 	min-height: 56px;
 	background-color: transparent;
@@ -1246,7 +1231,7 @@
 
 #u345
 {
-	z-index: 278;
+	z-index: 272;
 	width: 20px;
 	background-color: transparent;
 	position: relative;
@@ -1257,13 +1242,13 @@
 
 #u338-4
 {
-	z-index: 280;
+	z-index: 274;
 	width: 195px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -1274,7 +1259,7 @@
 
 #u352
 {
-	z-index: 284;
+	z-index: 278;
 	vertical-align: top;
 	width: 156px;
 	height: 2px;
@@ -1293,7 +1278,7 @@
 
 #buttonu228
 {
-	z-index: 258;
+	z-index: 252;
 	width: 205px;
 	border-color: #787878;
 	background-color: #CACACA;
@@ -1312,7 +1297,7 @@
 
 #u230
 {
-	z-index: 263;
+	z-index: 257;
 	width: 19px;
 	background-color: transparent;
 	position: relative;
@@ -1337,13 +1322,13 @@
 
 #u229-4
 {
-	z-index: 259;
+	z-index: 253;
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -1377,7 +1362,7 @@
 #two
 {
 	margin-left: 20px;
-	margin-top: 197px;
+	margin-top: 322px;
 	position: relative;
 }
 
@@ -1387,8 +1372,8 @@
 	width: 613px;
 	min-height: 32px;
 	background-color: transparent;
-	font-size: 30px;
 	line-height: 36px;
+	font-size: 30px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	margin-left: 82px;
@@ -1553,9 +1538,9 @@
 	width: 142px;
 	min-height: 26px;
 	background-color: transparent;
+	line-height: 14px;
 	text-align: left;
 	font-size: 12px;
-	line-height: 14px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -1599,9 +1584,9 @@
 	width: 39px;
 	min-height: 15px;
 	background-color: transparent;
+	line-height: 13px;
 	text-align: right;
 	font-size: 11px;
-	line-height: 13px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -1766,9 +1751,9 @@
 	width: 193px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -1792,9 +1777,9 @@
 	width: 288px;
 	min-height: 56px;
 	background-color: transparent;
+	line-height: 19px;
 	text-align: center;
 	font-size: 16px;
-	line-height: 19px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-left: 8px;
@@ -1898,9 +1883,9 @@
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -2012,9 +1997,9 @@
 	width: 166px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -2038,9 +2023,9 @@
 	width: 240px;
 	min-height: 56px;
 	background-color: transparent;
+	line-height: 19px;
 	text-align: center;
 	font-size: 16px;
-	line-height: 19px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-left: 19px;
@@ -2157,9 +2142,9 @@
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -2203,8 +2188,8 @@
 	width: 440px;
 	min-height: 32px;
 	background-color: transparent;
-	font-size: 30px;
 	line-height: 36px;
+	font-size: 30px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	margin-left: 20px;
@@ -2228,7 +2213,7 @@
 	margin-right: -10000px;
 }
 
-#u178 .clip_frame,#u245 .clip_frame,#u251 .clip_frame
+#u245 .clip_frame,#u251 .clip_frame
 {
 	-webkit-border-radius: 100px 100px 100px 100px;
 }
@@ -2488,9 +2473,9 @@
 	width: 39px;
 	min-height: 15px;
 	background-color: transparent;
+	line-height: 13px;
 	text-align: right;
 	font-size: 11px;
-	line-height: 13px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -2666,9 +2651,9 @@
 	width: 288px;
 	min-height: 56px;
 	background-color: transparent;
+	line-height: 19px;
 	text-align: center;
 	font-size: 16px;
-	line-height: 19px;
 	font-family: asap, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -2708,9 +2693,9 @@
 	width: 189px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -2796,9 +2781,9 @@
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -2989,9 +2974,9 @@
 	width: 166px;
 	min-height: 23px;
 	background-color: transparent;
+	line-height: 22px;
 	text-align: right;
 	font-size: 18px;
-	line-height: 22px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
@@ -3076,9 +3061,9 @@
 	width: 164px;
 	min-height: 44px;
 	background-color: transparent;
+	line-height: 20px;
 	text-align: center;
 	font-size: 17px;
-	line-height: 20px;
 	font-family: asap, sans-serif;
 	font-weight: 700;
 	position: relative;
