@@ -621,43 +621,46 @@ function playASong(playingPL, i) {
             dataType: "json",
             url: "https://api.spotify.com/v1/tracks/" + playingPL[i].split(':')[2],
             success: function(data) {
-                console.log(data['preview_url'])
-                // Update info
-                $('#albumArtworkDiv').html('<img src="' + data['album']['images'][1]['url'] + '" height="300" width="295" >')
-                $('#u837-4').find('p').text(data['name'])
-                $('#u840-4').find('p').text(data['artists'][0]['name'])
-                req = {
-                    api_key: api_key,
-                    format: 'json',
-                    results: 1,
-                    name: data['artists'][0]['name']
-                }
-                $.ajax({
-                    type: "GET",
-                    dataType: "json",
-                    url: "http://developer.echonest.com/api/v4/artist/biographies?" + $.param(req),
-                    success: function(data) {
-                        try {
-                            $('#u842-4').text(data['response']['biographies'][0]['text'].split('.')[0])
-                        } catch(err) {
-                            $('#u842-4').text("No information to display, sorry.")
-                        }                        
-                        $('#u841-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
+                if (data['preview_url'] != null) {
+                    // Update info
+                    $('#albumArtworkDiv').html('<img src="' + data['album']['images'][1]['url'] + '" height="300" width="295" >')
+                    $('#u837-4').find('p').text(data['name'])
+                    $('#u840-4').find('p').text(data['artists'][0]['name'])
+                    req = {
+                        api_key: api_key,
+                        format: 'json',
+                        results: 1,
+                        name: data['artists'][0]['name']
                     }
-                })
-                // Update audio
-                audio = new Audio(data['preview_url']);
-                audio.play()
-                audio.addEventListener('ended', function () {
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url: "http://developer.echonest.com/api/v4/artist/biographies?" + $.param(req),
+                        success: function(data) {
+                            try {
+                                $('#u842-4').text(data['response']['biographies'][0]['text'].split('.')[0])
+                            } catch(err) {
+                                $('#u842-4').text("No information to display, sorry.")
+                            }                        
+                            $('#u841-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
+                        }
+                    })
+                    // Update audio
+                    audio = new Audio(data['preview_url']);
+                    audio.play()
+                    audio.addEventListener('ended', function () {
+                        playASong(playingPL, i+1)
+                    })
+                    // Highlight song
+                    $('#managePlaylistDiv div').eq(i-1).css("background-color", "")
+                    $('#managePlaylistDiv div').eq(i-1).find("li span").removeClass("glyphicon glyphicon-music")
+                    $('#managePlaylistDiv div').eq(i-1).find("li span").addClass("glyphicon glyphicon-remove")
+                    $('#managePlaylistDiv div').eq(i).css("background-color", "#c7c7c7")
+                    $('#managePlaylistDiv div').eq(i).find("li span").removeClass("glyphicon glyphicon-remove")
+                    $('#managePlaylistDiv div').eq(i).find("li span").addClass("glyphicon glyphicon-music")
+                } else {
                     playASong(playingPL, i+1)
-                })
-                // Highlight song
-                $('#managePlaylistDiv div').eq(i-1).css("background-color", "")
-                $('#managePlaylistDiv div').eq(i-1).find("li span").removeClass("glyphicon glyphicon-music")
-                $('#managePlaylistDiv div').eq(i-1).find("li span").addClass("glyphicon glyphicon-remove")
-                $('#managePlaylistDiv div').eq(i).css("background-color", "#0CF5E4")
-                $('#managePlaylistDiv div').eq(i).find("li span").removeClass("glyphicon glyphicon-remove")
-                $('#managePlaylistDiv div').eq(i).find("li span").addClass("glyphicon glyphicon-music")
+                }
 
             }
         })
