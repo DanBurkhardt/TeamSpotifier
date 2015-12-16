@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450220002831">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450282226608">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -18,8 +18,6 @@
     <file name="u352_2x.png" crc="58712043" ref="index"/>
     <file name="u363.png" crc="64757942" ref="index"/>
     <file name="u363_2x.png" crc="4169463297" ref="index"/>
-    <file name="playlists.png" crc="205681089" seo="true" ref="index"/>
-    <file name="playlists_2x.png" crc="65176156" seo="true" ref="index"/>
     <file name="managelist.png" crc="364658062" seo="true" ref="index"/>
     <file name="managelist_2x.png" crc="3773494723" seo="true" ref="index"/>
     <file name="u436.png" crc="64757942" ref="index"/>
@@ -36,11 +34,19 @@
     <file name="search15x15_2x.png" crc="4050613220" seo="true" ref="index"/>
     <file name="singer.jpg" crc="3778332063" seo="true" ref="index"/>
     <file name="singer_2x.jpg" crc="4217574225" seo="true" ref="index"/>
+    <file name="disc.png" crc="242029969" seo="true" ref="index"/>
+    <file name="disc_2x.png" crc="535188388" seo="true" ref="index"/>
+    <file name="myplaylists.png" crc="465571896" ref="index"/>
+    <file name="myplaylists_2x.png" crc="5603163" ref="index"/>
+    <file name="myplaylistsclose.png" crc="4280674834" ref="index"/>
+    <file name="myplaylistsclose_2x.png" crc="417182847" ref="index"/>
+    <file name="wavewht.png" crc="4068172996" seo="true" ref="index"/>
+    <file name="wavewht_2x.png" crc="454423294" seo="true" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="409599335" ref="index"/>
-    <file name="iefonts_index.css" crc="484043215" ref="index"/>
+    <file name="index.css" crc="364744874" ref="index"/>
+    <file name="iefonts_index.css" crc="103121418" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
@@ -52,6 +58,7 @@
     <file name="musewpslideshow.js" crc="360574455" ref="index"/>
     <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
+    <file name="musewpdisclosure.js" crc="404074387" ref="index"/>
   </folder>
-  <file name="index.html" crc="34704063" seo="true" mt="1450219991294" redirect="true"/>
+  <file name="index.html" crc="419999587" seo="true" mt="1450282218601" redirect="true"/>
 </manifest>
