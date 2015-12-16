@@ -204,7 +204,8 @@ function hideAll() {
     $('input').val('')
 
     // Hide playlist playing
-    $('#pu956').hide()
+    $('#u956').hide()
+    $('#u955-4').hide()
     $('#pu837-4').hide()
     $('#albumArtworkDiv').hide()
 
@@ -280,8 +281,12 @@ function scenario1Listeners(){
     // For saving song selection to an existing playlist
     $( "#s1ExistingSaveButton" ).click(function() {
         name = $('#u322').find("#scenario1PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist1);
-        alert( "Playlist added successfully!" );
+        if (name == 'null') {
+            alert( "You have to create a playlist first." );
+        } else {
+            globalPL[name] = $.extend(globalPL[name], playlist1);
+            alert( "Playlist added successfully!" );
+        }
     });
     
     // For saving a new playlist to the local storage location of playlists
@@ -369,8 +374,12 @@ function scenario2Listeners(){
     // For saving song selection to an existing playlist
     $( "#s2ExistingSaveButton" ).click(function() {
         name = $('#u514').find("#scenario2PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist2);
-        alert( "Playlist added successfully!" );
+        if (name == 'null') {
+            alert( "You have to create a playlist first." );
+        } else {
+            globalPL[name] = $.extend(globalPL[name], playlist2);
+            alert( "Playlist added successfully!" );
+        }
     });
     
     // For saving a new playlist to the local storage location of playlists
@@ -462,8 +471,12 @@ function scenario3Listeners(){
     // For saving song selection to an existing playlist
     $( "#s3ExistingSaveButton" ).click(function() {
         name = $('#u564').find("#scenario3PlaylistSelector").val()
-        globalPL[name] = $.extend(globalPL[name], playlist3);
-        alert( "Playlist added successfully!" );
+        if (name == 'null') {
+            alert( "You have to create a playlist first." );
+        } else {
+            globalPL[name] = $.extend(globalPL[name], playlist3);
+            alert( "Playlist added successfully!" );           
+        }
     });
     
     // For saving a new playlist to the local storage location of playlists
@@ -488,9 +501,14 @@ function manageListeners(){
 
     // Filling in second dropdown based on globalPL
     $('#u835-3').on("click", function() {
-        $('#u855').find('#scenario1PlaylistSelector').html("")
-        for (pl in globalPL) {
-            $('#u855').find("#scenario1PlaylistSelector").append('<option value="' + pl + '">' + pl + '</option>')
+        
+        if (Object.keys(globalPL).length == 0) {
+            $('#u855').html('<p> You have no playlist. Create one by searching for songs above! </p>')
+        } else {
+            $('#u855').html('<select name="playlistSelector" style="width:150px; height:50px" id="scenario1PlaylistSelector"></select>')
+            for (pl in globalPL) {
+                $('#u855').find("#scenario1PlaylistSelector").append('<option value="' + pl + '">' + pl + '</option>')
+            }
         }
         // Display playlist songs on the right
         playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
@@ -524,7 +542,9 @@ function manageListeners(){
     $('#buttonu622').on("click", function() {
         var retVal = confirm("Do you really want to delete this playlist?");
         if( retVal == true ){
+            // Delete playlist
             delete globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
+            // Update dropdown
             $('#u855').find('#scenario1PlaylistSelector').html("")
             for (pl in globalPL) {
                 $('#u855').find("#scenario1PlaylistSelector").append('<option value="' + pl + '">' + pl + '</option>')
@@ -537,6 +557,11 @@ function manageListeners(){
                 $('#managePlaylistDiv').append("<div class='myresult'><li data-ref=" + spot + ">" + playlist[spot]['title'] + ", " + playlist[spot]['artist'] + "<span class='glyphicon glyphicon-remove' aria-hidden='true'></span></li></div>")
             }
             $('#managePlaylistDiv').append("</ul>");
+            // Stop playing songs
+            audio.pause()
+            audio.currentTime = 0
+            hidePlayingSong()
+            $('#playWholePlaylistButton').text('play')
             return true;
         }
         else{
@@ -578,12 +603,14 @@ function manageListeners(){
 /   Show and hide playing songs
 */
 function showPlayingSong() {
-    $('#pu956').show()
+    $('#u955-4').show()
+    $('#u956').show()
     $('#pu837-4').show()
     $('#albumArtworkDiv').show()
 }
 function hidePlayingSong() {
-    $('#pu956').hide()
+    $('#u955-4').hide()
+    $('#u956').hide()
     $('#pu837-4').hide()
     $('#albumArtworkDiv').hide()
 }
