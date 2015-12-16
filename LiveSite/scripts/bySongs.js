@@ -43,6 +43,8 @@ function createPlaylistSongs(songName, artistName, duration) {
 				dataType: "json",
 				url: "http://developer.echonest.com/api/v4/song/search?" + $.param(req2),
 				success: function(data) {
+                    // Hide loading indicator
+                    hideLoadingIndicator();
 					console.log(data)
 					var i = 0;
 					var d = 0;
