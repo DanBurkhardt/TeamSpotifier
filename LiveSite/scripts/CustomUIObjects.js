@@ -478,13 +478,13 @@ function scenario3Listeners(){
 function manageListeners(){
 
     // Filling in second dropdown based on globalPL
-    $('#u393').on("click", function() {
-        $('#u408').find('#scenario1PlaylistSelector').html("")
+    $('#u834').on("click", function() {
+        $('#u855').find('#scenario1PlaylistSelector').html("")
         for (pl in globalPL) {
-            $('#u408').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+            $('#u855').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
         }
         // Display playlist songs on the right
-        playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+        playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
         $('#managePlaylistDiv').append("<ul>");
         for (spot in playlist) {
@@ -494,8 +494,8 @@ function manageListeners(){
     })
 
     // Display playlist songs on change
-    $('#u408').on("change", "#scenario1PlaylistSelector", function() {
-        playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+    $('#u855').on("change", "#scenario1PlaylistSelector", function() {
+        playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
         $('#managePlaylistDiv').html("")
         $('#managePlaylistDiv').append("<ul>");
         for (spot in playlist) {
@@ -515,13 +515,13 @@ function manageListeners(){
     $('#u639').on("click", function() {
         var retVal = confirm("Do you really want to delete this playlist?");
         if( retVal == true ){
-            delete globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
-            $('#u408').find('#scenario1PlaylistSelector').html("")
+            delete globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
+            $('#u855').find('#scenario1PlaylistSelector').html("")
             for (pl in globalPL) {
-                $('#u408').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+                $('#u855').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
             }
             // Display playlist songs on the right
-            playlist = globalPL[$('#u408').find("#scenario1PlaylistSelector").val()]
+            playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
             $('#managePlaylistDiv').html("")
             $('#managePlaylistDiv').append("<ul>");
             for (spot in playlist) {
@@ -545,15 +545,15 @@ function manageListeners(){
         }
         
         // Play playlist
-        if ($('#playWholePlaylistButton').text() == 'play playlist') {
+        if ($('#playWholePlaylistButton').text() == 'play') {
             playASong(playingPL, 0)
-            $('#playWholePlaylistButton').text('stop playlist')
+            $('#playWholePlaylistButton').text('stop')
 
         // Stop playlist
-        } else if ($('#playWholePlaylistButton').text() == 'stop playlist') {
+        } else if ($('#playWholePlaylistButton').text() == 'stop') {
             audio.pause()
             audio.currentTime = 0
-            $('#playWholePlaylistButton').text('play playlist')
+            $('#playWholePlaylistButton').text('play')
         }
 
     });
@@ -585,7 +585,7 @@ function playASong(playingPL, i) {
 
     } else {
 
-        $('#playWholePlaylistButton').text('play playlist')
+        $('#playWholePlaylistButton').text('play')
 
     }
 
