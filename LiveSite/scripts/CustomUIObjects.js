@@ -612,8 +612,8 @@ function playASong(playingPL, i) {
                     url: "http://developer.echonest.com/api/v4/artist/biographies?" + $.param(req),
                     success: function(data) {
                         console.log(data['response']['biographies'][0]['text'].split('.')[0])
-                        //$('#u841-4').find('p').text('"' + data['response']['biographies'][0]['text'].split('.')[0] + '"')
-                        $('#u842-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
+                        $('#u842-4').text('"' + data['response']['biographies'][0]['text'].split('.')[0] + '"')
+                        $('#u841-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
                         console.log()
                     }
                 })
