@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450302368435">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.TeamSpotifier.com" resolutions="1x,2x" timestamp="1450303293775">
   <folder name="images">
     <file name="appicon.png" crc="152208089" seo="true" ref="index"/>
     <file name="appicon_2x.png" crc="4266588112" seo="true" ref="index"/>
@@ -55,7 +55,7 @@
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4144991806"/>
-    <file name="index.css" crc="3841966798" ref="index"/>
+    <file name="index.css" crc="194642250" ref="index"/>
     <file name="iefonts_index.css" crc="79500571" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -70,5 +70,5 @@
     <file name="touchswipe.js" crc="4218319045" ref="index"/>
     <file name="musewpdisclosure.js" crc="404074387" ref="index"/>
   </folder>
-  <file name="index.html" crc="3831334383" seo="true" mt="1450302359821" redirect="true"/>
+  <file name="index.html" crc="161472545" seo="true" mt="1450303289183" redirect="true"/>
 </manifest>
