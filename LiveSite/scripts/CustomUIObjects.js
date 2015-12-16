@@ -15,19 +15,19 @@ var currentDuration3 = "15";
 var currentMinEnergy = "0";
 
 // current max energy for scenario 3
-var currentMaxEnergy = "1";
+var currentMaxEnergy = "15";
 
 // current min danceability for scenario 3
 var currentMinDanceability = "0";
 
 // current max danceability for scenario 3
-var currentMaxDanceability = "1";
+var currentMaxDanceability = "15";
 
 // current min liveness for scenario 3
 var currentMinLiveness = "0";
 
 // current max liveness for scenario 3
-var currentMaxLiveness = "1";
+var currentMaxLiveness = "15";
 
 
 
