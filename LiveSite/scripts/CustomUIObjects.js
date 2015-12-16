@@ -203,6 +203,10 @@ function hideAll() {
     // Clean all inputs
     $('input').val('')
 
+    // Hide playlist playing
+    $('#pu837-4').hide()
+    $('#albumArtworkDiv').hide()
+
 }
 
 
@@ -478,10 +482,10 @@ function scenario3Listeners(){
 function manageListeners(){
 
     // Filling in second dropdown based on globalPL
-    $('#u834').on("click", function() {
+    $('#u835-3').on("click", function() {
         $('#u855').find('#scenario1PlaylistSelector').html("")
         for (pl in globalPL) {
-            $('#u855').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+            $('#u855').find("#scenario1PlaylistSelector").append('<option value="' + pl + '">' + pl + '</option>')
         }
         // Display playlist songs on the right
         playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
@@ -512,13 +516,13 @@ function manageListeners(){
     });
 
     // Action area for deleting playlist
-    $('#u639').on("click", function() {
+    $('#buttonu622').on("click", function() {
         var retVal = confirm("Do you really want to delete this playlist?");
         if( retVal == true ){
             delete globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
             $('#u855').find('#scenario1PlaylistSelector').html("")
             for (pl in globalPL) {
-                $('#u855').find("#scenario1PlaylistSelector").append("<option value=" + pl + ">" + pl + "</option>")
+                $('#u855').find("#scenario1PlaylistSelector").append('<option value="' + pl + '">' + pl + '</option>')
             }
             // Display playlist songs on the right
             playlist = globalPL[$('#u855').find("#scenario1PlaylistSelector").val()]
@@ -536,7 +540,7 @@ function manageListeners(){
     })
     
     // Action area for playing the entire playlist
-    $('#u657').on("click", function() {
+    $('#playWholePlaylistButton').on("click", function() {
         
         // Get playlist name
         playingPL = []
@@ -547,12 +551,14 @@ function manageListeners(){
         // Play playlist
         if ($('#playWholePlaylistButton').text() == 'play') {
             playASong(playingPL, 0)
+            showPlayingSong()
             $('#playWholePlaylistButton').text('stop')
 
         // Stop playlist
         } else if ($('#playWholePlaylistButton').text() == 'stop') {
             audio.pause()
             audio.currentTime = 0
+            hidePlayingSong()
             $('#playWholePlaylistButton').text('play')
         }
 
@@ -561,6 +567,18 @@ function manageListeners(){
 };// END MANAGE PLAYLIST LISTENERS
 
     
+
+/*
+/   Show and hide playing songs
+*/
+function showPlayingSong() {
+    $('#pu837-4').show()
+    $('#albumArtworkDiv').show()
+}
+function hidePlayingSong() {
+    $('#pu837-4').hide()
+    $('#albumArtworkDiv').hide()
+}
 
 /*
 /   Play a song
@@ -575,6 +593,28 @@ function playASong(playingPL, i) {
             url: "https://api.spotify.com/v1/tracks/" + playingPL[i].split(':')[2],
             success: function(data) {
                 console.log(data['preview_url'])
+                // Update info
+                $('#albumArtworkDiv').html('<img src="' + data['album']['images'][1]['url'] + '" height="300" width="295" >')
+                $('#u837-4').find('p').text(data['name'])
+                $('#u840-4').find('p').text(data['artists'][0]['name'])
+                req = {
+                    api_key: api_key,
+                    format: 'json',
+                    results: 1,
+                    name: data['artists'][0]['name']
+                }
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "http://developer.echonest.com/api/v4/artist/biographies?" + $.param(req),
+                    success: function(data) {
+                        console.log(data['response']['biographies'][0]['text'].split('.')[0])
+                        //$('#u841-4').find('p').text('"' + data['response']['biographies'][0]['text'].split('.')[0] + '"')
+                        $('#u842-4').find('p').html('<a href="' + data['response']['biographies'][0]['url'] + '" target="_blank">source</a>')
+                        console.log()
+                    }
+                })
+                // Update audio
                 audio = new Audio(data['preview_url']);
                 audio.play()
                 audio.addEventListener('ended', function () {
@@ -585,6 +625,7 @@ function playASong(playingPL, i) {
 
     } else {
 
+        hidePlayingSong()
         $('#playWholePlaylistButton').text('play')
 
     }

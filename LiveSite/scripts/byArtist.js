@@ -1,4 +1,4 @@
-var api_key = 'WFHOQX2BKPZPVWRWC'
+api_key = 'WFHOQX2BKPZPVWRWC'
 
 
 function createPlaylistArtist(artistName, duration) {
