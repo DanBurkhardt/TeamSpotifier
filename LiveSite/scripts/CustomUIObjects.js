@@ -204,6 +204,7 @@ function hideAll() {
     $('input').val('')
 
     // Hide playlist playing
+    $('#pu956').hide()
     $('#pu837-4').hide()
     $('#albumArtworkDiv').hide()
 
@@ -553,6 +554,7 @@ function manageListeners(){
         
         // Play playlist
         if ($('#playWholePlaylistButton').text() == 'play') {
+            $('#u955-4').find('p').text("playing playlist: " + $('#u855').find("#scenario1PlaylistSelector").val())
             playASong(playingPL, 0)
             showPlayingSong()
             $('#playWholePlaylistButton').text('stop')
@@ -575,10 +577,12 @@ function manageListeners(){
 /   Show and hide playing songs
 */
 function showPlayingSong() {
+    $('#pu956').show()
     $('#pu837-4').show()
     $('#albumArtworkDiv').show()
 }
 function hidePlayingSong() {
+    $('#pu956').hide()
     $('#pu837-4').hide()
     $('#albumArtworkDiv').hide()
 }
