@@ -653,13 +653,21 @@ function playASong(playingPL, i) {
                 })
                 // Highlight song
                 $('#managePlaylistDiv div').eq(i-1).css("background-color", "")
+                $('#managePlaylistDiv div').eq(i-1).find("li span").removeClass("glyphicon glyphicon-music")
+                $('#managePlaylistDiv div').eq(i-1).find("li span").addClass("glyphicon glyphicon-remove")
                 $('#managePlaylistDiv div').eq(i).css("background-color", "#0CF5E4")
+                $('#managePlaylistDiv div').eq(i).find("li span").removeClass("glyphicon glyphicon-remove")
+                $('#managePlaylistDiv div').eq(i).find("li span").addClass("glyphicon glyphicon-music")
+
             }
         })
 
     } else {
 
         hidePlayingSong()
+        $('#managePlaylistDiv div').eq(i-1).css("background-color", "")
+        $('#managePlaylistDiv div').eq(i-1).find("li span").removeClass("glyphicon glyphicon-music")
+        $('#managePlaylistDiv div').eq(i-1).find("li span").addClass("glyphicon glyphicon-remove")
         $('#playWholePlaylistButton').text('play')
 
     }
