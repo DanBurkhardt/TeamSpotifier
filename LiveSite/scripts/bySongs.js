@@ -28,14 +28,14 @@ function createPlaylistSongs(songName, artistName, duration) {
 				bucket: ['id:spotify', 'tracks', 'audio_summary'],
 				key: audio_summary['key'],
 				mode: audio_summary['mode'],
-				min_acousticness: audio_summary['acousticness']*0.9,
-				max_acousticness: audio_summary['acousticness']*1.1,
+				//min_acousticness: audio_summary['acousticness']*0.9,
+				//max_acousticness: audio_summary['acousticness']*1.1,
 				min_danceability: audio_summary['danceability']*0.9,
 				max_danceability: audio_summary['danceability']*1.1,
 				min_energy: audio_summary['energy']*0.9,
 				max_energy: audio_summary['energy']*1.1,
-				min_speechiness: audio_summary['speechiness']*0.9,
-				max_speechiness: audio_summary['speechiness']*1.1
+				//min_speechiness: audio_summary['speechiness']*0.9,
+				//max_speechiness: audio_summary['speechiness']*1.1
 			}
 			$.ajaxSettings.traditional = true
 			$.ajax({
