@@ -11,7 +11,7 @@
   <title>TeamSpotifier</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?4144991806"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?3902565439" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?4095504605" id="pagesheet"/>
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?79500571"/>
   <![endif]-->
@@ -65,7 +65,7 @@ var __adobewebfontsappname__ = "muse";
     <a class="nonblock nontext anim_swing clip_frame mse_pre_init" id="u743" href="index.html#one"><!-- image --><img class="block" id="u743_img" src="images/singerwhtsolid.png" data-hidpi-src="images/singerwhtsolid_2x.png" alt="" width="31" height="31"/></a>
     <a class="nonblock nontext anim_swing clearfix mse_pre_init" id="u158-4" href="index.html#one"><!-- content --><p>by artist</p></a>
     <a class="nonblock nontext anim_swing clip_frame mse_pre_init" id="u751" href="index.html#two"><!-- image --><img class="block" id="u751_img" src="images/disc.png" data-hidpi-src="images/disc_2x.png" alt="" width="31" height="31"/></a>
-    <a class="nonblock nontext anim_swing clearfix mse_pre_init" id="u749-4" href="index.html#two"><!-- content --><p>song &amp; artist</p></a>
+    <a class="nonblock nontext anim_swing clearfix mse_pre_init" id="u749-4" href="index.html#two"><!-- content --><p>by song &amp; artist</p></a>
     <a class="nonblock nontext anim_swing clip_frame mse_pre_init" id="u868" href="index.html#three"><!-- image --><img class="block" id="u868_img" src="images/wavewht.png" data-hidpi-src="images/wavewht_2x.png" alt="" width="31" height="31"/></a>
     <a class="nonblock nontext anim_swing clearfix mse_pre_init" id="u750-4" href="index.html#three"><!-- content --><p>by attributes</p></a>
     <div class="clearfix mse_pre_init" id="u156-4"><!-- content -->
@@ -340,33 +340,35 @@ durationSlider2Changed(event,ui);
       <div class="popup_anchor" id="u508popup">
        <div class="ContainerGroup rgba-background clearfix" id="u508"><!-- stack box -->
         <div class="Container clearfix grpelem" id="u509"><!-- column -->
-         <div class="clearfix colelem" id="pu512-4"><!-- group -->
-          <div class="clearfix grpelem" id="u512-4"><!-- content -->
-           <p>add to existing playlist</p>
+         <div class="position_content" id="u509_position_content">
+          <div class="clearfix colelem" id="pu512-4"><!-- group -->
+           <div class="clearfix grpelem" id="u512-4"><!-- content -->
+            <p>add to existing playlist</p>
+           </div>
+           <div class="clip_frame grpelem" id="u516"><!-- image -->
+            <img class="block" id="u516_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="20" height="20"/>
+           </div>
           </div>
-          <div class="clip_frame grpelem" id="u516"><!-- image -->
-           <img class="block" id="u516_img" src="images/add.png" data-hidpi-src="images/add_2x.png" alt="" width="20" height="20"/>
+          <div class="clearfix colelem" id="u518-6"><!-- content -->
+           <p>Choose a playlist and click save</p>
+           <p>to add these songs.</p>
           </div>
-         </div>
-         <div class="clearfix colelem" id="u518-6"><!-- content -->
-          <p>Choose a playlist and click save</p>
-          <p>to add these songs.</p>
-         </div>
-         <div class="clearfix colelem" id="pu514"><!-- group -->
-          <div class="grpelem" id="u514"><!-- custom html -->
-           <select name="playlistSelector2" style="width:200px; height=50px" id="scenario2PlaylistSelector">
+          <div class="clearfix colelem" id="pu514"><!-- group -->
+           <div class="grpelem" id="u514"><!-- custom html -->
+            <select name="playlistSelector2" style="width:200px; height=50px" id="scenario2PlaylistSelector">
   <option value="volvo">Volvo</option>
   <option value="saab">Saab</option>
   <option value="fiat">Fiat</option>
   <option value="audi">Audi</option>
 </select>
 </div>
-          <div class="grpelem" id="u510"><!-- custom html -->
-           <button class="PamphletCloseButton rounded-corners clearfix" id="s2ExistingSaveButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">save</button>
+           <div class="grpelem" id="u510"><!-- custom html -->
+            <button class="PamphletCloseButton rounded-corners clearfix" id="s2ExistingSaveButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">save</button>
 </div>
-          <div class="grpelem" id="u659"><!-- custom html -->
-           <button class="PamphletCloseButton rounded-corners clearfix" id="s2CloseButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">cancel</button>
+           <div class="grpelem" id="u659"><!-- custom html -->
+            <button class="PamphletCloseButton rounded-corners clearfix" id="s2CloseButton" style="height:30px; width:95px; color=#c4c4c4;border-radius: 10px;">cancel</button>
 </div>
+          </div>
          </div>
         </div>
        </div>
@@ -690,23 +692,23 @@ $('#u124-bw').registerPositionScrollEffect([{"speed":[null,0],"in":[-Infinity,0.
 Muse.Utils.resizeHeight()/* resize height */
 $('#u149').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
 $('#u132-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
-$('#u743').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35.75]},{"speed":[0,0],"in":[35.75,Infinity]}]);/* scroll effect */
-$('#u158-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35.75]},{"speed":[0,0],"in":[35.75,Infinity]}]);/* scroll effect */
-$('#u751').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
-$('#u749-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35.65]},{"speed":[0,0],"in":[35.65,Infinity]}]);/* scroll effect */
+$('#u743').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36.7]},{"speed":[0,0],"in":[36.7,Infinity]}]);/* scroll effect */
+$('#u158-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36.7]},{"speed":[0,0],"in":[36.7,Infinity]}]);/* scroll effect */
+$('#u751').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36.95]},{"speed":[0,0],"in":[36.95,Infinity]}]);/* scroll effect */
+$('#u749-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36.6]},{"speed":[0,0],"in":[36.6,Infinity]}]);/* scroll effect */
 $('#u868').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
 $('#u750-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35.65]},{"speed":[0,0],"in":[35.65,Infinity]}]);/* scroll effect */
 $('#u156-4').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
-$('#u161').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36.05]},{"speed":[0,0],"in":[36.05,Infinity]}]);/* scroll effect */
-$('#u162').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35.05]},{"speed":[0,0],"in":[35.05,Infinity]}]);/* scroll effect */
-$('#u163').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,36]},{"speed":[0,0],"in":[36,Infinity]}]);/* scroll effect */
-$('#u1011').registerOpacityScrollEffect([{"opacity":0,"fade":106.55,"in":[-Infinity,783.55]},{"opacity":47,"in":[783.55,783.55]},{"opacity":0,"fade":405.2,"in":[783.55,Infinity]}]);/* scroll effect */
+$('#u161').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,37]},{"speed":[0,0],"in":[37,Infinity]}]);/* scroll effect */
+$('#u162').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,33.1]},{"speed":[0,0],"in":[33.1,Infinity]}]);/* scroll effect */
+$('#u163').registerPositionScrollEffect([{"speed":[0,0],"in":[-Infinity,35]},{"speed":[0,0],"in":[35,Infinity]}]);/* scroll effect */
+$('#u1011').registerOpacityScrollEffect([{"fade":106.55,"in":[-Infinity,736.55],"opacity":0},{"opacity":47,"in":[736.55,736.55]},{"fade":405.2,"in":[736.55,Infinity],"opacity":0}]);/* scroll effect */
 Muse.Utils.initWidget('#pamphletu291', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu291 */
 Muse.Utils.initWidget('#pamphletu329', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu329 */
-$('#u995').registerOpacityScrollEffect([{"opacity":0,"fade":240.1,"in":[-Infinity,1839.1]},{"opacity":90,"in":[1839.1,1839.1]},{"opacity":0,"fade":237.85,"in":[1839.1,Infinity]}]);/* scroll effect */
+$('#u995').registerOpacityScrollEffect([{"fade":240.1,"in":[-Infinity,1754.8],"opacity":0},{"opacity":90,"in":[1754.8,1754.8]},{"fade":237.85,"in":[1754.8,Infinity],"opacity":0}]);/* scroll effect */
 Muse.Utils.initWidget('#pamphletu498', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu498 */
 Muse.Utils.initWidget('#pamphletu528', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu528 */
-$('#u1004').registerOpacityScrollEffect([{"opacity":0,"fade":199.65,"in":[-Infinity,2814]},{"opacity":100,"in":[2814,2814]},{"opacity":0,"fade":200.35,"in":[2814,Infinity]}]);/* scroll effect */
+$('#u1004').registerOpacityScrollEffect([{"fade":199.65,"in":[-Infinity,2911.65],"opacity":0},{"opacity":90,"in":[2911.65,2911.65]},{"fade":200.35,"in":[2911.65,Infinity],"opacity":0}]);/* scroll effect */
 Muse.Utils.initWidget('#pamphletu588', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu588 */
 Muse.Utils.initWidget('#pamphletu553', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false}); });/* #pamphletu553 */
 Muse.Utils.initWidget('#accordionu833', function(elem) { return new WebPro.Widget.Accordion(elem, {canCloseAll:true,defaultIndex:-1}); });/* #accordionu833 */
@@ -732,7 +734,7 @@ $(document).on('mousewheel DOMMouseScroll', function(event) {
 event.preventDefault();
 if(delay) return;
 delay = true;
-setTimeout(function(){delay = false},2000)
+setTimeout(function(){delay = false},1500)
 var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 var XZ = "";
 var a = $("a:not([href])").not(XZ.replace(/\b(?=\w)/g, '#'));
